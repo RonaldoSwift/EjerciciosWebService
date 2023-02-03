@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct GetComidasResponse: Decodable{
+struct GetComidasResponse: Decodable, Identifiable{
     let id: String
     let nombre: String
     let precio: Int

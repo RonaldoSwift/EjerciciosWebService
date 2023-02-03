@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1BA7A67298C7ADF00EE72EF /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA7A66298C7ADF00EE72EF /* SharedViewModel.swift */; };
+		D1BA7A69298C83FF00EE72EF /* ComidaImgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA7A68298C83FF00EE72EF /* ComidaImgeView.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
 		D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB022989CD6B00BF4C81 /* ContentView.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1BA7A66298C7ADF00EE72EF /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		D1BA7A68298C83FF00EE72EF /* ComidaImgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaImgeView.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
 		D1CACB022989CD6B00BF4C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				D1CACB64298C2ABB00BF4C81 /* MenuPrincipal */,
-				D1CACB61298B466300BF4C81 /* SharedViewModel */,
-				D1CACB60298B465800BF4C81 /* WebService */,
+				D1CACB61298B466300BF4C81 /* WebService */,
+				D1CACB60298B465800BF4C81 /* SharedViewModel */,
 				D1CACB5F298B464E00BF4C81 /* ActualizarComida */,
 				D1CACB5E298B464500BF4C81 /* VerComida */,
 				D1CACB5D298B463700BF4C81 /* CrearComida */,
@@ -142,6 +146,7 @@
 				D1CACB092989CD6F00BF4C81 /* Persistence.swift */,
 				D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */,
 				D1CACB062989CD6F00BF4C81 /* Preview Content */,
+				D1BA7A68298C83FF00EE72EF /* ComidaImgeView.swift */,
 			);
 			path = EjerciciosWebService;
 			sourceTree = "<group>";
@@ -198,14 +203,15 @@
 			path = ActualizarComida;
 			sourceTree = "<group>";
 		};
-		D1CACB60298B465800BF4C81 /* WebService */ = {
+		D1CACB60298B465800BF4C81 /* SharedViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D1BA7A66298C7ADF00EE72EF /* SharedViewModel.swift */,
 			);
-			path = WebService;
+			path = SharedViewModel;
 			sourceTree = "<group>";
 		};
-		D1CACB61298B466300BF4C81 /* SharedViewModel */ = {
+		D1CACB61298B466300BF4C81 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
 				D1CACB71298C318F00BF4C81 /* PutComidasResponse.swift */,
@@ -216,7 +222,7 @@
 				D1CACB7B298C329300BF4C81 /* DeleteComidasResponse.swift */,
 				D1CACB7D298C32AC00BF4C81 /* DeleteComidasRequest.swift */,
 			);
-			path = SharedViewModel;
+			path = WebService;
 			sourceTree = "<group>";
 		};
 		D1CACB64298C2ABB00BF4C81 /* MenuPrincipal */ = {
@@ -378,9 +384,11 @@
 				D1CACB6C298C2DF300BF4C81 /* VerComidaViewModel.swift in Sources */,
 				D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
+				D1BA7A67298C7ADF00EE72EF /* SharedViewModel.swift in Sources */,
 				D1CACB70298C2E1600BF4C81 /* ActualizarComidaViewModel.swift in Sources */,
 				D1CACB6E298C2E0600BF4C81 /* ActualizarComidaView.swift in Sources */,
 				D1CACB72298C318F00BF4C81 /* PutComidasResponse.swift in Sources */,
+				D1BA7A69298C83FF00EE72EF /* ComidaImgeView.swift in Sources */,
 				D1CACB76298C321400BF4C81 /* PostComidasResponse.swift in Sources */,
 				D1CACB7E298C32AC00BF4C81 /* DeleteComidasRequest.swift in Sources */,
 			);
