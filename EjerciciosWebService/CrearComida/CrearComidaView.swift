@@ -21,6 +21,7 @@ struct CrearComidaView: View {
         VStack{
             Image("CrearComida")
                 .resizable()
+                .border(Color("Boton"),width: 6.0)
                 .scaledToFit()
             
             Spacer()

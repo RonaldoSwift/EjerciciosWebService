@@ -19,6 +19,7 @@ struct VerComidaView: View {
             VStack{
                 Image("VerComida")
                     .resizable()
+                    .border(Color("Boton"),width: 6.0)
                     .scaledToFit()
                 Spacer()
                 
@@ -49,7 +50,6 @@ struct VerComidaView: View {
                     Text("No se encontro Menu De Comidas")
                     Spacer()
                 }
-                
             }
             .task {
                 do{
@@ -66,9 +66,7 @@ struct VerComidaView: View {
                            isActive: $mostrarSiguientePantalla) {
                 EmptyView()
             }
-            
         }
-        
     }
     
     private func celdaDeVerComida(comida: GetComidasResponse, clickEnTexto: @escaping () ->Void, clickEnTacho: @escaping () ->Void) -> some View{

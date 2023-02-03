@@ -11,4 +11,5 @@ struct GetComidasResponse: Decodable, Identifiable{
     let nombre: String
     let precio: Int
     let url: String
+    let descripcion: String
 }

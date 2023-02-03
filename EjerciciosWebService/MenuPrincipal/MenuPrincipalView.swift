@@ -14,6 +14,7 @@ struct MenuPrincipalView: View {
                 Text("MENU PRINCIPAL")
                 Image("ImagenPrincipal")
                     .resizable()
+                    .border(Color("Boton"),width: 6.0)
                     .scaledToFit()
                 
                 Spacer()

@@ -8,7 +8,7 @@
 import Foundation
 
 class SharedViewModel: ObservableObject{
-    @Published var getComidasResponse: GetComidasResponse = GetComidasResponse.init(id: "", nombre: "", precio: 0, url: "")
+    @Published var getComidasResponse: GetComidasResponse = GetComidasResponse.init(id: "", nombre: "", precio: 0, url: "",descripcion: "")
     
     func guardarGetComidasResponse(getComidasResponse: GetComidasResponse){
         self.getComidasResponse = getComidasResponse

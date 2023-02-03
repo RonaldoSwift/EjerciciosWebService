@@ -21,6 +21,7 @@ struct ActualizarComidaView: View {
         VStack{
             Image("ActualizarComida")
                 .resizable()
+                .border(Color("Boton"),width: 6.0)
                 .scaledToFit()
             
             Spacer()
