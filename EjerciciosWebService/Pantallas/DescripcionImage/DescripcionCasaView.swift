@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct DescripcionCasaView: View {
-    var verCasasView: VerCasaView = VerCasaView()
+    var verCasasView: HomeView = HomeView()
     @EnvironmentObject var sharedViewModel: SharedViewModel
     var body: some View {
         VStack{

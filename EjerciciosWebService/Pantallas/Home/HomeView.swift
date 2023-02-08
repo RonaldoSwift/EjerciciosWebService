@@ -8,8 +8,8 @@
 import SwiftUI
 import Kingfisher
 
-struct VerCasaView: View {
-    var verCasaViewModel: VerCasaViewModel = VerCasaViewModel()
+struct HomeView: View {
+    var verCasaViewModel: HomeViewModel = HomeViewModel()
     @State private var casas: [GetCasasResponse] = []
     @State private var mostrarSiguientePantalla = false
     @EnvironmentObject var sharedViewModel: SharedViewModel
@@ -22,9 +22,9 @@ struct VerCasaView: View {
                     .scaledToFit()
                 if(casas.count > 0){
                     ScrollView {
-                        ForEach(casas, id: \.id) { (getCasasResponse:GetCasasResponse) in
+                        ForEach(Array(zip(casas.indices, casas)), id: \.0){ (position:Int, getCasasResponse:GetCasasResponse) in
                             celdaDeVerCasas(
-                                casas: getCasasResponse,
+                                casa: getCasasResponse,
                                 clickEnTexto: {
                                     sharedViewModel.guardarGetCasasResponse(getCasasReponse: getCasasResponse)
                                     mostrarSiguientePantalla = true
@@ -32,13 +32,21 @@ struct VerCasaView: View {
                                 clickEnTacho: {
                                     Task{
                                         do{
-                                            let _ = try await self.verCasaViewModel.eliminarCasa(deletCasasRequest: DeleteCasasRequest.init(id: getCasasResponse.id))
-                                            let casasDelServidor = try await verCasaViewModel.obtenerTodasLasCasas()
+                                            let _ = try await self.verCasaViewModel.eliminarCasaDeWebService(deletCasasRequest: DeleteCasasRequest.init(id: getCasasResponse.id))
+                                            let casasDelServidor = try await verCasaViewModel.obtenerTodasLasCasasDeWebService()
                                             casas = casasDelServidor
                                         } catch let error{
                                             print("Error")
                                         }
                                     }
+                                }, clickEnCorazonDescativado: {
+                                    casas[position].corazonActivado = true
+                                    //Guardamos el favorito en base de datos
+                                    Task{
+                                        await verCasaViewModel.crearCasaEnBaseDeDatos(getCasasResponse: getCasasResponse)
+                                    }
+                                }, clickEnCorazonActivado: {
+                                    casas[position].corazonActivado = false
                                 })
                         }
                     }
@@ -51,7 +59,7 @@ struct VerCasaView: View {
             }
             .task {
                 do{
-                    let casas = try await verCasaViewModel.obtenerTodasLasCasas()
+                    let casas = try await verCasaViewModel.obtenerTodasLasCasasDeWebService()
                     self.casas = casas
                 } catch{
                     fatalError("No se encontraron resultados")
@@ -68,46 +76,11 @@ struct VerCasaView: View {
         }
     }
     
-    private func celdaDeVerCasas(casas:GetCasasResponse,
-                                 clickEnTexto: @escaping ()-> Void,
-                                 clickEnTacho: @escaping () -> Void
-    )-> some View{
-        ZStack{
-            HStack{
-                KFImage(URL(string: casas.url))
-                    .resizable()
-                    .frame(width: 150,height: 150)
-                    .border(Color.red,width: 3.0)
-                    .scaledToFit()
-                
-                Text("ID:\(casas.id) \nDistrito:\(casas.distrito)  \nDireccrion:\(casas.direccion)  \nPrecio:\(casas.precio)  \nArea:\(casas.area)")
-                    .onTapGesture {
-                        clickEnTexto()
-                    }
-                Button {
-                    clickEnTacho()
-                } label: {
-                    Image("Tachito")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30,height: 30)
-                }
-            }
-            
-            VStack{
-                HStack{
-                    Spacer()
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(Color.red)
-                }
-                Spacer()
-            }
-        }
-    }
+    
 }
 
 struct VerCasaView_Previews: PreviewProvider {
     static var previews: some View {
-        VerCasaView()
+        HomeView()
     }
 }

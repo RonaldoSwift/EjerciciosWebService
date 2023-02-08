@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct MenuTabView: View {
+    @State private var selection = 1
     var body: some View {
-        TabView{
-            VerCasaView()
+        TabView(selection: $selection){
+            HomeView()
                 .tabItem {
-                    Label("Menu", systemImage: "list.dash")
+                    Label("Home", systemImage: "house.fill")
                 }
+                .tag(1)
             
-            
+            FavoritosView()
                 .tabItem {
-                    Label("Prueba", systemImage: "heart")
+                    Label("Favoritos", systemImage: "heart")
                 }
-            
-                .tabItem {
-                    Label("Prueba", systemImage: "")
-                }
-            
+                .tag(2)
         }
         .background(Color("ColorPrincipal"))
+        .navigationTitle(selection == 1 ? "Home (\(UserDefaults.standard.integer(forKey: "CantidadFavoritos")))" : "Favoritos")
+
     }
 }
 

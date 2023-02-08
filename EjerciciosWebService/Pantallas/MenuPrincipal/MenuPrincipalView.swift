@@ -55,7 +55,7 @@ struct MenuPrincipalView: View {
                 .foregroundColor(Color.white)
                 .cornerRadius(10)
                 
-                Button {
+                /*Button {
                     UserDefaults.standard.set(true, forKey: "eslibre")
                 } label: {
                     Text("Guardar valor")
@@ -65,7 +65,7 @@ struct MenuPrincipalView: View {
                     print(UserDefaults.standard.bool(forKey: "eslibre"))
                 } label: {
                     Text("Leer Valor")
-                }
+                }*/
                 
                 Spacer()
                 

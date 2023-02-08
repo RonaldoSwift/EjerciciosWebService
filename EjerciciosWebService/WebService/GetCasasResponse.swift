@@ -14,4 +14,5 @@ struct GetCasasResponse: Decodable, Identifiable{
     let descripcion: String
     let area: Int
     let url: String
+    var corazonActivado: Bool
 }
