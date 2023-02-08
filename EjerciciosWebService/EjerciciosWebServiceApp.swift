@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct EjerciciosWebServiceApp: App {
-    let persistenceController = PersistenceController.shared
-
+    var sharedComidaViewModel: SharedViewModel = SharedViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MenuPrincipalView()
+                .environmentObject(sharedComidaViewModel)
         }
     }
 }
