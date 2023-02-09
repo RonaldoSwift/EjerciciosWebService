@@ -19,7 +19,7 @@ struct FavoritosView: View {
                         
                     } clickEnTacho: {
                         Task{
-                           await favoritoViewModel.eliminarCasaDeBaseDeDatos(casaFavorita.id)                            
+                           await favoritoViewModel.eliminarCasaDeBaseDeDatos(casaFavorita.id)
                            let obtenerCasasRestantes = await favoritoViewModel.obtenerTodaslasCasasDeBaseDeDatos()
                             casasFavoritas = obtenerCasasRestantes
                         }
@@ -28,7 +28,6 @@ struct FavoritosView: View {
                     } clickEnCorazonActivado: {
                         
                     }
-                    
                 }
             }
         }
@@ -42,7 +41,6 @@ struct FavoritosView: View {
             }
         }
     }
-    
 }
 
 struct CasaHeartView_Previews: PreviewProvider {
