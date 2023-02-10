@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16191F929959CAD005DEFAD /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191F829959CAD005DEFAD /* MenuPrincipalView.swift */; };
+		D16191FC29959E52005DEFAD /* AgregarMaravillaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191FB29959E52005DEFAD /* AgregarMaravillaView.swift */; };
+		D16191FE29959E66005DEFAD /* AgregarMaravillaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191FD29959E66005DEFAD /* AgregarMaravillaViewModel.swift */; };
+		D161920229959EA8005DEFAD /* VerMaravillasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161920129959EA8005DEFAD /* VerMaravillasView.swift */; };
+		D161920429959EBE005DEFAD /* VerMaravillasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161920329959EBE005DEFAD /* VerMaravillasViewModel.swift */; };
+		D161920829959F03005DEFAD /* ActualizarMaravillaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161920729959F03005DEFAD /* ActualizarMaravillaView.swift */; };
+		D161920A29959F10005DEFAD /* ActualizarMaravillaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161920929959F10005DEFAD /* ActualizarMaravillaViewModel.swift */; };
+		D16192112995C162005DEFAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D16192102995C162005DEFAD /* Alamofire */; };
+		D16192142995C180005DEFAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D16192132995C180005DEFAD /* Kingfisher */; };
+		D16192162995C1AC005DEFAD /* PutMaravillasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192152995C1AC005DEFAD /* PutMaravillasResponse.swift */; };
+		D16192182995C1ED005DEFAD /* PutMaravillasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192172995C1ED005DEFAD /* PutMaravillasRequest.swift */; };
+		D161921A2995C26C005DEFAD /* PostMaravillasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192192995C26C005DEFAD /* PostMaravillasResponse.swift */; };
+		D161921C2995C298005DEFAD /* PostMaravillasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161921B2995C298005DEFAD /* PostMaravillasRequest.swift */; };
+		D161921E2995C2BF005DEFAD /* GetMaravillasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161921D2995C2BF005DEFAD /* GetMaravillasResponse.swift */; };
+		D16192202995C2E5005DEFAD /* DeleteMaravillasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161921F2995C2E5005DEFAD /* DeleteMaravillasResponse.swift */; };
+		D16192222995C307005DEFAD /* DeleteMaravillasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192212995C307005DEFAD /* DeleteMaravillasRequest.swift */; };
+		D16192252995D8B9005DEFAD /* MenuTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192242995D8B9005DEFAD /* MenuTabsView.swift */; };
+		D16192282995DD7D005DEFAD /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16192272995DD7D005DEFAD /* LikesView.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
-		D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB022989CD6B00BF4C81 /* ContentView.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
 		D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */; };
-		D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB092989CD6F00BF4C81 /* Persistence.swift */; };
 		D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */; };
 		D1CACB172989CD7000BF4C81 /* EjerciciosWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */; };
 		D1CACB212989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB202989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift */; };
@@ -36,12 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D16191F829959CAD005DEFAD /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D16191FB29959E52005DEFAD /* AgregarMaravillaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMaravillaView.swift; sourceTree = "<group>"; };
+		D16191FD29959E66005DEFAD /* AgregarMaravillaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMaravillaViewModel.swift; sourceTree = "<group>"; };
+		D161920129959EA8005DEFAD /* VerMaravillasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerMaravillasView.swift; sourceTree = "<group>"; };
+		D161920329959EBE005DEFAD /* VerMaravillasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerMaravillasViewModel.swift; sourceTree = "<group>"; };
+		D161920729959F03005DEFAD /* ActualizarMaravillaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarMaravillaView.swift; sourceTree = "<group>"; };
+		D161920929959F10005DEFAD /* ActualizarMaravillaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarMaravillaViewModel.swift; sourceTree = "<group>"; };
+		D16192152995C1AC005DEFAD /* PutMaravillasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutMaravillasResponse.swift; sourceTree = "<group>"; };
+		D16192172995C1ED005DEFAD /* PutMaravillasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutMaravillasRequest.swift; sourceTree = "<group>"; };
+		D16192192995C26C005DEFAD /* PostMaravillasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMaravillasResponse.swift; sourceTree = "<group>"; };
+		D161921B2995C298005DEFAD /* PostMaravillasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMaravillasRequest.swift; sourceTree = "<group>"; };
+		D161921D2995C2BF005DEFAD /* GetMaravillasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMaravillasResponse.swift; sourceTree = "<group>"; };
+		D161921F2995C2E5005DEFAD /* DeleteMaravillasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMaravillasResponse.swift; sourceTree = "<group>"; };
+		D16192212995C307005DEFAD /* DeleteMaravillasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMaravillasRequest.swift; sourceTree = "<group>"; };
+		D16192242995D8B9005DEFAD /* MenuTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabsView.swift; sourceTree = "<group>"; };
+		D16192272995DD7D005DEFAD /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
-		D1CACB022989CD6B00BF4C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1CACB042989CD6F00BF4C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D1CACB092989CD6F00BF4C81 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D1CACB0C2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EjerciciosWebService.xcdatamodel; sourceTree = "<group>"; };
 		D1CACB122989CD7000BF4C81 /* EjerciciosWebServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EjerciciosWebServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceTests.swift; sourceTree = "<group>"; };
@@ -55,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16192142995C180005DEFAD /* Kingfisher in Frameworks */,
+				D16192112995C162005DEFAD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +107,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D16191F729959C96005DEFAD /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D16191F829959CAD005DEFAD /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
+		D16191FA29959E18005DEFAD /* AgregarMaravilla */ = {
+			isa = PBXGroup;
+			children = (
+				D16191FB29959E52005DEFAD /* AgregarMaravillaView.swift */,
+				D16191FD29959E66005DEFAD /* AgregarMaravillaViewModel.swift */,
+			);
+			path = AgregarMaravilla;
+			sourceTree = "<group>";
+		};
+		D16191FF29959E6D005DEFAD /* VerMaravillas */ = {
+			isa = PBXGroup;
+			children = (
+				D161920129959EA8005DEFAD /* VerMaravillasView.swift */,
+				D161920329959EBE005DEFAD /* VerMaravillasViewModel.swift */,
+			);
+			path = VerMaravillas;
+			sourceTree = "<group>";
+		};
+		D161920029959E71005DEFAD /* ActualizarMaravilla */ = {
+			isa = PBXGroup;
+			children = (
+				D161920729959F03005DEFAD /* ActualizarMaravillaView.swift */,
+				D161920929959F10005DEFAD /* ActualizarMaravillaViewModel.swift */,
+			);
+			path = ActualizarMaravilla;
+			sourceTree = "<group>";
+		};
+		D161920B2995B145005DEFAD /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D16192152995C1AC005DEFAD /* PutMaravillasResponse.swift */,
+				D16192172995C1ED005DEFAD /* PutMaravillasRequest.swift */,
+				D16192192995C26C005DEFAD /* PostMaravillasResponse.swift */,
+				D161921B2995C298005DEFAD /* PostMaravillasRequest.swift */,
+				D161921D2995C2BF005DEFAD /* GetMaravillasResponse.swift */,
+				D161921F2995C2E5005DEFAD /* DeleteMaravillasResponse.swift */,
+				D16192212995C307005DEFAD /* DeleteMaravillasRequest.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D161920C2995B14D005DEFAD /* SharedViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedViewModel;
+			sourceTree = "<group>";
+		};
+		D161920D2995B157005DEFAD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D161920E2995B16B005DEFAD /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				D16192262995DD6D005DEFAD /* Likes */,
+				D16192232995D849005DEFAD /* MenuTabs */,
+				D161920029959E71005DEFAD /* ActualizarMaravilla */,
+				D16191FF29959E6D005DEFAD /* VerMaravillas */,
+				D16191FA29959E18005DEFAD /* AgregarMaravilla */,
+				D16191F729959C96005DEFAD /* MenuPrincipal */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		D16192232995D849005DEFAD /* MenuTabs */ = {
+			isa = PBXGroup;
+			children = (
+				D16192242995D8B9005DEFAD /* MenuTabsView.swift */,
+			);
+			path = MenuTabs;
+			sourceTree = "<group>";
+		};
+		D16192262995DD6D005DEFAD /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				D16192272995DD7D005DEFAD /* LikesView.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
 		D1CACAF42989CD6B00BF4C81 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +223,12 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D161920E2995B16B005DEFAD /* Pantallas */,
+				D161920D2995B157005DEFAD /* CoreData */,
+				D161920C2995B14D005DEFAD /* SharedViewModel */,
+				D161920B2995B145005DEFAD /* WebService */,
 				D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */,
-				D1CACB022989CD6B00BF4C81 /* ContentView.swift */,
 				D1CACB042989CD6F00BF4C81 /* Assets.xcassets */,
-				D1CACB092989CD6F00BF4C81 /* Persistence.swift */,
-				D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */,
 				D1CACB062989CD6F00BF4C81 /* Preview Content */,
 			);
 			path = EjerciciosWebService;
@@ -149,6 +275,10 @@
 			dependencies = (
 			);
 			name = EjerciciosWebService;
+			packageProductDependencies = (
+				D16192102995C162005DEFAD /* Alamofire */,
+				D16192132995C180005DEFAD /* Kingfisher */,
+			);
 			productName = EjerciciosWebService;
 			productReference = D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +351,10 @@
 				Base,
 			);
 			mainGroup = D1CACAF42989CD6B00BF4C81;
+			packageReferences = (
+				D161920F2995C162005DEFAD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D16192122995C17F005DEFAD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D1CACAFE2989CD6B00BF4C81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16192222995C307005DEFAD /* DeleteMaravillasRequest.swift in Sources */,
+				D16192282995DD7D005DEFAD /* LikesView.swift in Sources */,
+				D161921A2995C26C005DEFAD /* PostMaravillasResponse.swift in Sources */,
+				D161921E2995C2BF005DEFAD /* GetMaravillasResponse.swift in Sources */,
+				D16192162995C1AC005DEFAD /* PutMaravillasResponse.swift in Sources */,
 				D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */,
-				D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */,
-				D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
+				D161920A29959F10005DEFAD /* ActualizarMaravillaViewModel.swift in Sources */,
+				D16191FE29959E66005DEFAD /* AgregarMaravillaViewModel.swift in Sources */,
+				D16192182995C1ED005DEFAD /* PutMaravillasRequest.swift in Sources */,
+				D16191FC29959E52005DEFAD /* AgregarMaravillaView.swift in Sources */,
+				D161921C2995C298005DEFAD /* PostMaravillasRequest.swift in Sources */,
+				D16192202995C2E5005DEFAD /* DeleteMaravillasResponse.swift in Sources */,
+				D161920829959F03005DEFAD /* ActualizarMaravillaView.swift in Sources */,
+				D161920229959EA8005DEFAD /* VerMaravillasView.swift in Sources */,
+				D16191F929959CAD005DEFAD /* MenuPrincipalView.swift in Sources */,
+				D161920429959EBE005DEFAD /* VerMaravillasViewModel.swift in Sources */,
+				D16192252995D8B9005DEFAD /* MenuTabsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +739,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D161920F2995C162005DEFAD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D16192122995C17F005DEFAD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D16192102995C162005DEFAD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D161920F2995C162005DEFAD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D16192132995C180005DEFAD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D16192122995C17F005DEFAD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */ = {
