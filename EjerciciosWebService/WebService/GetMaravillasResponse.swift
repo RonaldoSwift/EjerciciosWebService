@@ -11,4 +11,5 @@ struct GetMaravillasResponse:Decodable{
     let nombre:String
     let descripcion: String
     let url:String
+    var corazonActivado: Bool
 }

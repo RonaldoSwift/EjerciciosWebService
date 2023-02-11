@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct EjerciciosWebServiceApp: App {
-
+    var sharedViewModel: SharedViewModel = SharedViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MenuPrincipalView()
+                .environmentObject(sharedViewModel)
         }
     }
 }

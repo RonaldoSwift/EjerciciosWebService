@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12D830F2996B69300789B84 /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D830E2996B69300789B84 /* SharedViewModel.swift */; };
+		D12D83122996BD2900789B84 /* MaravillasDescripcionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D83112996BD2900789B84 /* MaravillasDescripcionView.swift */; };
+		D12D83152996F69100789B84 /* Componentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D83142996F69100789B84 /* Componentes.swift */; };
+		D12D831729970B3A00789B84 /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D831629970B3A00789B84 /* LikesViewModel.swift */; };
 		D16191F929959CAD005DEFAD /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191F829959CAD005DEFAD /* MenuPrincipalView.swift */; };
 		D16191FC29959E52005DEFAD /* AgregarMaravillaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191FB29959E52005DEFAD /* AgregarMaravillaView.swift */; };
 		D16191FE29959E66005DEFAD /* AgregarMaravillaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16191FD29959E66005DEFAD /* AgregarMaravillaViewModel.swift */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12D830E2996B69300789B84 /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		D12D83112996BD2900789B84 /* MaravillasDescripcionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaravillasDescripcionView.swift; sourceTree = "<group>"; };
+		D12D83142996F69100789B84 /* Componentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Componentes.swift; sourceTree = "<group>"; };
+		D12D831629970B3A00789B84 /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
 		D16191F829959CAD005DEFAD /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		D16191FB29959E52005DEFAD /* AgregarMaravillaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMaravillaView.swift; sourceTree = "<group>"; };
 		D16191FD29959E66005DEFAD /* AgregarMaravillaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMaravillaViewModel.swift; sourceTree = "<group>"; };
@@ -107,6 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12D83102996BCF800789B84 /* MaravillaDescripcion */ = {
+			isa = PBXGroup;
+			children = (
+				D12D83112996BD2900789B84 /* MaravillasDescripcionView.swift */,
+			);
+			path = MaravillaDescripcion;
+			sourceTree = "<group>";
+		};
+		D12D83132996F66B00789B84 /* Utilitarios */ = {
+			isa = PBXGroup;
+			children = (
+				D12D83142996F69100789B84 /* Componentes.swift */,
+			);
+			path = Utilitarios;
+			sourceTree = "<group>";
+		};
 		D16191F729959C96005DEFAD /* MenuPrincipal */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +183,7 @@
 		D161920C2995B14D005DEFAD /* SharedViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D12D830E2996B69300789B84 /* SharedViewModel.swift */,
 			);
 			path = SharedViewModel;
 			sourceTree = "<group>";
@@ -174,6 +199,8 @@
 		D161920E2995B16B005DEFAD /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				D12D83132996F66B00789B84 /* Utilitarios */,
+				D12D83102996BCF800789B84 /* MaravillaDescripcion */,
 				D16192262995DD6D005DEFAD /* Likes */,
 				D16192232995D849005DEFAD /* MenuTabs */,
 				D161920029959E71005DEFAD /* ActualizarMaravilla */,
@@ -196,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				D16192272995DD7D005DEFAD /* LikesView.swift */,
+				D12D831629970B3A00789B84 /* LikesViewModel.swift */,
 			);
 			path = Likes;
 			sourceTree = "<group>";
@@ -410,8 +438,12 @@
 				D16191FC29959E52005DEFAD /* AgregarMaravillaView.swift in Sources */,
 				D161921C2995C298005DEFAD /* PostMaravillasRequest.swift in Sources */,
 				D16192202995C2E5005DEFAD /* DeleteMaravillasResponse.swift in Sources */,
+				D12D83152996F69100789B84 /* Componentes.swift in Sources */,
+				D12D830F2996B69300789B84 /* SharedViewModel.swift in Sources */,
 				D161920829959F03005DEFAD /* ActualizarMaravillaView.swift in Sources */,
 				D161920229959EA8005DEFAD /* VerMaravillasView.swift in Sources */,
+				D12D831729970B3A00789B84 /* LikesViewModel.swift in Sources */,
+				D12D83122996BD2900789B84 /* MaravillasDescripcionView.swift in Sources */,
 				D16191F929959CAD005DEFAD /* MenuPrincipalView.swift in Sources */,
 				D161920429959EBE005DEFAD /* VerMaravillasViewModel.swift in Sources */,
 				D16192252995D8B9005DEFAD /* MenuTabsView.swift in Sources */,
