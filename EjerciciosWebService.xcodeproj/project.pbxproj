@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14682A0299C3BE0009CEC53 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D146829F299C3BE0009CEC53 /* Gilroy-Light.otf */; };
+		D14682A2299C3BF5009CEC53 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D14682A1299C3BF5009CEC53 /* Gilroy-ExtraBold.otf */; };
+		D1B63701299AFBED00DCB75D /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B63700299AFBED00DCB75D /* MenuPrincipalView.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
-		D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB022989CD6B00BF4C81 /* ContentView.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
 		D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */; };
-		D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB092989CD6F00BF4C81 /* Persistence.swift */; };
 		D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */; };
 		D1CACB172989CD7000BF4C81 /* EjerciciosWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */; };
 		D1CACB212989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB202989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift */; };
@@ -36,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D146829D299C3ACA009CEC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D146829F299C3BE0009CEC53 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Light.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-Light.otf"; sourceTree = "<group>"; };
+		D14682A1299C3BF5009CEC53 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-ExtraBold.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		D1B63700299AFBED00DCB75D /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
-		D1CACB022989CD6B00BF4C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1CACB042989CD6F00BF4C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D1CACB092989CD6F00BF4C81 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D1CACB0C2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EjerciciosWebService.xcdatamodel; sourceTree = "<group>"; };
 		D1CACB122989CD7000BF4C81 /* EjerciciosWebServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EjerciciosWebServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceTests.swift; sourceTree = "<group>"; };
@@ -75,6 +78,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D146829E299C3BB8009CEC53 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D14682A1299C3BF5009CEC53 /* Gilroy-ExtraBold.otf */,
+				D146829F299C3BE0009CEC53 /* Gilroy-Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D1B636FC299AFB9400DCB75D /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				D1B636FF299AFBB800DCB75D /* MenuPrincipal */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		D1B636FD299AFB9C00DCB75D /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D1B636FE299AFBA900DCB75D /* SharedViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedViewModel;
+			sourceTree = "<group>";
+		};
+		D1B636FF299AFBB800DCB75D /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D1B63700299AFBED00DCB75D /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
 		D1CACAF42989CD6B00BF4C81 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +140,13 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D146829E299C3BB8009CEC53 /* Fonts */,
+				D146829D299C3ACA009CEC53 /* Info.plist */,
+				D1B636FE299AFBA900DCB75D /* SharedViewModel */,
+				D1B636FD299AFB9C00DCB75D /* WebService */,
+				D1B636FC299AFB9400DCB75D /* Pantallas */,
 				D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */,
-				D1CACB022989CD6B00BF4C81 /* ContentView.swift */,
 				D1CACB042989CD6F00BF4C81 /* Assets.xcassets */,
-				D1CACB092989CD6F00BF4C81 /* Persistence.swift */,
 				D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */,
 				D1CACB062989CD6F00BF4C81 /* Preview Content */,
 			);
@@ -239,6 +284,8 @@
 			files = (
 				D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */,
 				D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */,
+				D14682A0299C3BE0009CEC53 /* Gilroy-Light.otf in Resources */,
+				D14682A2299C3BF5009CEC53 /* Gilroy-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */,
-				D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */,
-				D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
+				D1B63701299AFBED00DCB75D /* MenuPrincipalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +474,7 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EjerciciosWebService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +504,7 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EjerciciosWebService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
