@@ -26,27 +26,21 @@ struct MenuPrincipalView: View {
                     Spacer()
                     
                     Text("Compra tus favoritas")
+                        .font(.custom("Gilroy-Light", size: 30))
                     Text("Especias Puras!")
                         .font(.custom("Gilroy-ExtraBold", size: 40))
                         .bold()
                         .frame(height: 50)
 
                     Text("Comino,pimineta, canela y todo lo que necesitas para darle sabor a tus comidas")
-                        .frame(height: 100)
+                        .font(.custom("Gilroy-Light", size: 17))
+                        .foregroundColor(Color("Letras"))
+                    
+                    
                     NavigationLink {
-                        
+                        LoginView()
                     } label: {
-                        HStack{
-                            Spacer()
-                            Text("Comenzar")
-                            Spacer()
-                            Image(systemName:"chevron.right")
-                        }
-                            .padding()
-                            .frame(width: 272,height: 56)
-                            .foregroundColor(Color.white)
-                            .background(Color("ColorButton"))
-                            .cornerRadius(10)
+                        ButtonMarron(texto: "Get Started")
                     }
                 }
                 .padding()

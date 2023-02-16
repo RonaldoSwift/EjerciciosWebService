@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		D14682A0299C3BE0009CEC53 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D146829F299C3BE0009CEC53 /* Gilroy-Light.otf */; };
 		D14682A2299C3BF5009CEC53 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D14682A1299C3BF5009CEC53 /* Gilroy-ExtraBold.otf */; };
+		D1670024299DAF78006D0E10 /* Componente.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1670023299DAF78006D0E10 /* Componente.swift */; };
+		D187DBD5299D5D6700A197EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD4299D5D6700A197EA /* LoginView.swift */; };
+		D187DBD7299D5D7A00A197EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD6299D5D7A00A197EA /* LoginViewModel.swift */; };
+		D187DBDA299D8CFA00A197EA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD9299D8CFA00A197EA /* SignUpView.swift */; };
+		D187DBDC299D8D1700A197EA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBDB299D8D1700A197EA /* SignUpViewModel.swift */; };
+		D187DBDF299D9E2B00A197EA /* VerEspeciasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBDE299D9E2B00A197EA /* VerEspeciasView.swift */; };
+		D187DBE1299D9E3C00A197EA /* VerEspeciasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBE0299D9E3C00A197EA /* VerEspeciasViewModel.swift */; };
 		D1B63701299AFBED00DCB75D /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B63700299AFBED00DCB75D /* MenuPrincipalView.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
@@ -40,6 +47,13 @@
 		D146829D299C3ACA009CEC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D146829F299C3BE0009CEC53 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Light.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-Light.otf"; sourceTree = "<group>"; };
 		D14682A1299C3BF5009CEC53 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-ExtraBold.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		D1670023299DAF78006D0E10 /* Componente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Componente.swift; sourceTree = "<group>"; };
+		D187DBD4299D5D6700A197EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D187DBD6299D5D7A00A197EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D187DBD9299D8CFA00A197EA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D187DBDB299D8D1700A197EA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		D187DBDE299D9E2B00A197EA /* VerEspeciasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerEspeciasView.swift; sourceTree = "<group>"; };
+		D187DBE0299D9E3C00A197EA /* VerEspeciasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerEspeciasViewModel.swift; sourceTree = "<group>"; };
 		D1B63700299AFBED00DCB75D /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
@@ -87,10 +101,41 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D187DBD3299D5D4500A197EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D187DBD4299D5D6700A197EA /* LoginView.swift */,
+				D187DBD6299D5D7A00A197EA /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D187DBD8299D8CDA00A197EA /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D187DBD9299D8CFA00A197EA /* SignUpView.swift */,
+				D187DBDB299D8D1700A197EA /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D187DBDD299D9DFD00A197EA /* VerEspecias */ = {
+			isa = PBXGroup;
+			children = (
+				D187DBDE299D9E2B00A197EA /* VerEspeciasView.swift */,
+				D187DBE0299D9E3C00A197EA /* VerEspeciasViewModel.swift */,
+			);
+			path = VerEspecias;
+			sourceTree = "<group>";
+		};
 		D1B636FC299AFB9400DCB75D /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				D187DBDD299D9DFD00A197EA /* VerEspecias */,
+				D187DBD8299D8CDA00A197EA /* SignUp */,
+				D187DBD3299D5D4500A197EA /* Login */,
 				D1B636FF299AFBB800DCB75D /* MenuPrincipal */,
+				D1670023299DAF78006D0E10 /* Componente.swift */,
 			);
 			path = Pantallas;
 			sourceTree = "<group>";
@@ -310,9 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D187DBE1299D9E3C00A197EA /* VerEspeciasViewModel.swift in Sources */,
 				D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
+				D187DBD5299D5D6700A197EA /* LoginView.swift in Sources */,
+				D187DBD7299D5D7A00A197EA /* LoginViewModel.swift in Sources */,
+				D187DBDA299D8CFA00A197EA /* SignUpView.swift in Sources */,
+				D187DBDF299D9E2B00A197EA /* VerEspeciasView.swift in Sources */,
+				D1670024299DAF78006D0E10 /* Componente.swift in Sources */,
 				D1B63701299AFBED00DCB75D /* MenuPrincipalView.swift in Sources */,
+				D187DBDC299D8D1700A197EA /* SignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
