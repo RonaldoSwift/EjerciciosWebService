@@ -30,6 +30,30 @@ func NumeroDeTelefonoTextField(numeroDeCelular:Binding<String>) -> some View{
     
 }
 
+func ContraseñaDeTelefonoTextField(contraseñaDeCelular:Binding<String>) -> some View{
+    return ZStack{
+        HStack{
+            Image(systemName: "ellipsis")
+            TextField("", text: contraseñaDeCelular)
+            Spacer()
+            Image(systemName: "eye.fill")
+        }
+        .padding()
+        .frame(maxWidth:.infinity, maxHeight: 50)
+        .background(
+            Capsule()
+                .strokeBorder(Color("SombraColor"),lineWidth: 0.8)
+                .clipped()
+        )
+        .clipShape(Capsule())
+        
+        Text("RE-PASSWORD")
+            .frame(maxWidth: .infinity, maxHeight: 72, alignment: .topLeading)
+            .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
+    }
+}
+
+
 func ButtonMarron(texto:String) -> some View{
     return HStack{
         Spacer()

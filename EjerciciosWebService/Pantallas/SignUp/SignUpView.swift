@@ -11,7 +11,6 @@ struct SignUpView: View {
     
     @State private var numeroDeCelular: String = ""
     @State private var pasword: String = ""
-    @State private var repasword: String = ""
     
     var body: some View {
         ZStack{
@@ -33,40 +32,14 @@ struct SignUpView: View {
                     .font(.custom("Gilroy-Light", size: 17))
                     .foregroundColor(Color("Letras"))
                 
-                
+                //Numero De Celular
                 NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
                 
+                //Pasword
+                ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
                 
-                HStack{
-                    Image(systemName: "ellipsis")
-                    TextField("", text: $pasword)
-                    Spacer()
-                    Image(systemName: "eye.fill")
-                }
-                .padding()
-                .frame(maxWidth:350)
-                .background(
-                    Capsule()
-                        .strokeBorder(Color("SombraColor"),lineWidth: 0.8)
-                        .clipped()
-                )
-                .clipShape(Capsule())
+                ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
                 
-                
-                HStack{
-                    Image(systemName: "ellipsis")
-                    TextField("", text: $repasword)
-                    Spacer()
-                    Image(systemName: "eye.fill")
-                }
-                .padding()
-                .frame(maxWidth:350)
-                .background(
-                    Capsule()
-                        .strokeBorder(Color("SombraColor"),lineWidth: 0.8)
-                        .clipped()
-                )
-                .clipShape(Capsule())
                 
                 Button {
                     
@@ -77,7 +50,7 @@ struct SignUpView: View {
                 }
                 
                 NavigationLink {
-                    
+                    VerEspeciasView()
                 } label: {
                     ButtonMarron(texto: "Sign Up")
                 }

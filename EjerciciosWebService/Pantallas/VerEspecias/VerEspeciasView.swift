@@ -60,7 +60,7 @@ struct VerEspeciasView: View {
                 
                 ScrollView(.horizontal){
                     HStack{
-                        Text("Hola")
+                        Text("ESPECIAS")
                     }
                     .padding()
                     .frame(maxWidth:100)
@@ -70,6 +70,12 @@ struct VerEspeciasView: View {
                             .clipped()
                     )
                     .clipShape(Capsule())
+                }
+                
+                ScrollView(.horizontal){
+                    HStack{
+                        
+                    }
                 }
                 
             }

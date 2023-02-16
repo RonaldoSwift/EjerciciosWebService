@@ -101,6 +101,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D1670025299EBA5C006D0E10 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebService;
+			path = Pantallas/WebService;
+			sourceTree = "<group>";
+		};
 		D187DBD3299D5D4500A197EA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +193,7 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D1670025299EBA5C006D0E10 /* WebService */,
 				D146829E299C3BB8009CEC53 /* Fonts */,
 				D146829D299C3ACA009CEC53 /* Info.plist */,
 				D1B636FE299AFBA900DCB75D /* SharedViewModel */,

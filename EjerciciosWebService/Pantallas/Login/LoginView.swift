@@ -12,7 +12,6 @@ struct LoginView: View {
     @State private var numeroDeCelular: String = ""
     @State private var pasword: String = ""
     
-    
     var body: some View {
         ZStack{
             Image("FondoDePantallas")
@@ -33,25 +32,12 @@ struct LoginView: View {
                     .font(.custom("Gilroy-Light", size: 17))
                     .foregroundColor(Color("Letras"))
                 
-                
+                //NUMERO De Celular
                 NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
                 
+                //PASWORD
+                ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
                 
-                
-                HStack{
-                    Image(systemName: "ellipsis")
-                    TextField("", text: $pasword)
-                    Spacer()
-                    Image(systemName: "eye.fill")
-                }
-                .padding()
-                .frame(maxWidth:350)
-                .background(
-                    Capsule()
-                        .strokeBorder(Color("SombraColor"),lineWidth: 0.8)
-                        .clipped()
-                )
-                .clipShape(Capsule())
                 
                 Button {
                     
@@ -64,6 +50,7 @@ struct LoginView: View {
                 NavigationLink {
                     VerEspeciasView()
                 } label: {
+                    //Button en Componentes
                     ButtonMarron(texto: "Sign In")
                 }
                 
