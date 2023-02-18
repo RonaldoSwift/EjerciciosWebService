@@ -16,31 +16,25 @@ struct MenuPrincipalView: View {
                     .edgesIgnoringSafeArea(.all)
                 VStack{
                     Spacer()
-                    Spacer()
-
-                    Image("simboloCaffe")
-                        .resizable()
-                        .frame(width: 51.61,height: 51.61)
-                        .scaledToFit()
-                    Text("Especies !")
-                    Spacer()
+                    LogoGeneralCelda()
                     
-                    Text("Compra tus favoritas")
+                    Text("Find your favorite")
                         .font(.custom("Gilroy-Light", size: 30))
-                    Text("Especias Puras!")
+                    Text("Coffee Taste!")
                         .font(.custom("Gilroy-ExtraBold", size: 40))
                         .bold()
                         .frame(height: 50)
 
-                    Text("Comino,pimineta, canela y todo lo que necesitas para darle sabor a tus comidas")
+                    Text("We’re coffee shop, beer and wine bar, & event space for performing arts")
+                        .multilineTextAlignment(.center)
                         .font(.custom("Gilroy-Light", size: 17))
                         .foregroundColor(Color("Letras"))
-                    
-                    
+                        .padding(.bottom,30)
                     NavigationLink {
                         LoginView()
                     } label: {
                         ButtonMarron(texto: "Get Started")
+                            .padding(.bottom,25)
                     }
                 }
                 .padding()

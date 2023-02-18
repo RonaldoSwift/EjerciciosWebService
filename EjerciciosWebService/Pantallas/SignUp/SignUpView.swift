@@ -11,6 +11,7 @@ struct SignUpView: View {
     
     @State private var numeroDeCelular: String = ""
     @State private var pasword: String = ""
+    @State private var rePaword: String = ""
     
     var body: some View {
         ZStack{
@@ -19,11 +20,8 @@ struct SignUpView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 
-                Image("simboloCaffe")
-                    .resizable()
-                    .frame(width: 51.61,height: 51.61)
-                    .scaledToFit()
-                Text("Especies !")
+                LogoGeneralCelda()
+                    .padding(.bottom,20)
                 
                 Text("Sign Up")
                     .font(.custom("Gilroy-ExtraBold", size: 40))
@@ -31,6 +29,8 @@ struct SignUpView: View {
                 Text("Vamos a crearte una cuenta")
                     .font(.custom("Gilroy-Light", size: 17))
                     .foregroundColor(Color("Letras"))
+                    .padding(.bottom,30)
+
                 
                 //Numero De Celular
                 NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
@@ -38,25 +38,23 @@ struct SignUpView: View {
                 //Pasword
                 ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
                 
-                ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
+                ContraseñaDeTelefonoTextField(contraseñaDeCelular: $rePaword)
                 
                 
                 Button {
                     
                 } label: {
-                    Text("Contraseña Olvidada?")
-                        .foregroundColor(Color("ColorPaswordOlvidado"))
-                        .font(.custom("Gilroy-Light", size: 17))
+                    ForGotPasworCelda()
                 }
                 
                 NavigationLink {
-                    VerEspeciasView()
+                    InfoView()
                 } label: {
                     ButtonMarron(texto: "Sign Up")
                 }
                 
                 HStack{
-                    Text("No tengo cuenta")
+                    Text("Don’t have an account?")
                         .font(.custom("Gilroy-Light", size: 17))
                     
                     Button {
@@ -65,8 +63,10 @@ struct SignUpView: View {
                         Text("SIgn Upn")
                             .foregroundColor(Color("ColorPaswordOlvidado"))
                             .font(.custom("Gilroy-Light", size: 17))
+                            .underline(true, color: Color("ColorPaswordOlvidado"))
                     }
                 }
+                .padding(.bottom,15)
             }
             .padding()
         }

@@ -17,20 +17,21 @@ struct LoginView: View {
             Image("FondoDePantallas")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [.black]), startPoint: .top, endPoint: .bottom)
+                    )
+            
             VStack{
-                Spacer()
-                Image("simboloCaffe")
-                    .resizable()
-                    .frame(width: 51.61,height: 51.61)
-                    .scaledToFit()
-                Text("Especies !")
+                LogoGeneralCelda()
+                    .padding(.bottom,30)
                 
                 Text("Login In ")
                     .font(.custom("Gilroy-ExtraBold", size: 40))
                     .bold()
-                Text("Ya nos conocemos!")
-                    .font(.custom("Gilroy-Light", size: 17))
+                Text("We’ve already met!")
+                    .font(.custom("Gilroy-Regular", size: 17))
                     .foregroundColor(Color("Letras"))
+                    .padding(.bottom,50)
                 
                 //NUMERO De Celular
                 NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
@@ -42,20 +43,19 @@ struct LoginView: View {
                 Button {
                     
                 } label: {
-                    Text("Contraseña Olvidada?")
-                        .foregroundColor(Color("ColorPaswordOlvidado"))
-                        .font(.custom("Gilroy-Light", size: 17))
+                    ForGotPasworCelda()
                 }
                 
                 NavigationLink {
-                    VerEspeciasView()
+                    InfoView()
+                        .padding(.bottom,30)
                 } label: {
                     //Button en Componentes
                     ButtonMarron(texto: "Sign In")
                 }
                 
                 HStack{
-                    Text("No tengo cuenta")
+                    Text("Dont have an account?")
                         .font(.custom("Gilroy-Light", size: 17))
                     
                     NavigationLink {
@@ -64,10 +64,15 @@ struct LoginView: View {
                         Text("SIgn Upn")
                             .foregroundColor(Color("ColorPaswordOlvidado"))
                             .font(.custom("Gilroy-Light", size: 17))
+                            .underline(true, color: Color("ColorPaswordOlvidado"))
                     }
                 }
+                .padding(.bottom,15)
             }
             .padding()
+            
+            
+            
         }
     }
 }
