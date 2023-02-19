@@ -25,6 +25,8 @@
 		D16CF194299EFF6D00EE0E56 /* ComprasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CF193299EFF6D00EE0E56 /* ComprasView.swift */; };
 		D16CF197299EFF8B00EE0E56 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CF196299EFF8B00EE0E56 /* PerfilView.swift */; };
 		D16CF19A299F0B3C00EE0E56 /* EspeciasDescripcionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CF199299F0B3C00EE0E56 /* EspeciasDescripcionView.swift */; };
+		D16CF19D29A1B10700EE0E56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D16CF19C29A1B10700EE0E56 /* GoogleService-Info.plist */; };
+		D16CF1A029A1B2BB00EE0E56 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D16CF19F29A1B2BB00EE0E56 /* FirebaseAuth */; };
 		D187DBD5299D5D6700A197EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD4299D5D6700A197EA /* LoginView.swift */; };
 		D187DBD7299D5D7A00A197EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD6299D5D7A00A197EA /* LoginViewModel.swift */; };
 		D187DBDA299D8CFA00A197EA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187DBD9299D8CFA00A197EA /* SignUpView.swift */; };
@@ -77,6 +79,7 @@
 		D16CF196299EFF8B00EE0E56 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		D16CF199299F0B3C00EE0E56 /* EspeciasDescripcionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspeciasDescripcionView.swift; sourceTree = "<group>"; };
 		D16CF19B29A04AE900EE0E56 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Regular.ttf"; path = "../../../../Downloads/gilroy/Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		D16CF19C29A1B10700EE0E56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D187DBD4299D5D6700A197EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D187DBD6299D5D7A00A197EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D187DBD9299D8CFA00A197EA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1670039299ED19D006D0E10 /* Kingfisher in Frameworks */,
+				D16CF1A029A1B2BB00EE0E56 /* FirebaseAuth in Frameworks */,
 				D1670036299ED192006D0E10 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +282,7 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D16CF19C29A1B10700EE0E56 /* GoogleService-Info.plist */,
 				D1670025299EBA5C006D0E10 /* WebService */,
 				D146829E299C3BB8009CEC53 /* Fonts */,
 				D146829D299C3ACA009CEC53 /* Info.plist */,
@@ -336,6 +341,7 @@
 			packageProductDependencies = (
 				D1670035299ED192006D0E10 /* Alamofire */,
 				D1670038299ED19D006D0E10 /* Kingfisher */,
+				D16CF19F29A1B2BB00EE0E56 /* FirebaseAuth */,
 			);
 			productName = EjerciciosWebService;
 			productReference = D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */;
@@ -412,6 +418,7 @@
 			packageReferences = (
 				D1670034299ED192006D0E10 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				D1670037299ED19D006D0E10 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D16CF19E29A1B2BB00EE0E56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = D1CACAFE2989CD6B00BF4C81 /* Products */;
 			projectDirPath = "";
@@ -431,6 +438,7 @@
 			files = (
 				D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */,
 				D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */,
+				D16CF19D29A1B10700EE0E56 /* GoogleService-Info.plist in Resources */,
 				D14682A0299C3BE0009CEC53 /* Gilroy-Light.otf in Resources */,
 				D14682A2299C3BF5009CEC53 /* Gilroy-ExtraBold.otf in Resources */,
 			);
@@ -824,6 +832,14 @@
 				kind = branch;
 			};
 		};
+		D16CF19E29A1B2BB00EE0E56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -836,6 +852,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D1670037299ED19D006D0E10 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		D16CF19F29A1B2BB00EE0E56 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D16CF19E29A1B2BB00EE0E56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 
