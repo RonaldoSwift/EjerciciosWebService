@@ -163,7 +163,6 @@ struct VerEspeciasView: View {
                                    isActive: $mostrarSiguientePantalla) {
                         EmptyView()
                     }
-                    
                 }
             }
         }

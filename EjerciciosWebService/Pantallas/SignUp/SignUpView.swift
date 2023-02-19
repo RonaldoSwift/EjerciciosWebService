@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SignUpView: View {
-    
+    var singUoViewModel: SignUpViewModel = SignUpViewModel()
     @State private var numeroDeCelular: String = ""
     @State private var pasword: String = ""
     @State private var rePaword: String = ""
+    @State private var irVerEspecias: Bool = false
     
     var body: some View {
         ZStack{
@@ -30,7 +31,7 @@ struct SignUpView: View {
                     .font(.custom("Gilroy-Light", size: 17))
                     .foregroundColor(Color("Letras"))
                     .padding(.bottom,30)
-
+                
                 
                 //Numero De Celular
                 NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
@@ -47,11 +48,11 @@ struct SignUpView: View {
                     ForGotPasworCelda()
                 }
                 
-                NavigationLink {
-                    InfoView()
-                } label: {
-                    ButtonMarron(texto: "Sign Up")
-                }
+                ButtonMarron(texto: "Sign Up", clickEnButton: {
+                    
+                    singUoViewModel.registrarUsuario(correo: "echon@gmail.com", pasword: "123456")
+                    irVerEspecias = true
+                })
                 
                 HStack{
                     Text("Don’t have an account?")
@@ -69,6 +70,9 @@ struct SignUpView: View {
                 .padding(.bottom,15)
             }
             .padding()
+            NavigationLink(destination: InfoView(), isActive: $irVerEspecias) {
+                EmptyView()
+            }
         }
     }
 }

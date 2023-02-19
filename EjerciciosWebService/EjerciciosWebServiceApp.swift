@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct EjerciciosWebServiceApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var  appDelegate
     var sharedViewModel: SharedViewModel = SharedViewModel()
     
     var body: some Scene {

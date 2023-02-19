@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MenuPrincipalView: View {
+    
+    @State private var irAlLogin:Bool = false
+    
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -24,20 +28,25 @@ struct MenuPrincipalView: View {
                         .font(.custom("Gilroy-ExtraBold", size: 40))
                         .bold()
                         .frame(height: 50)
-
+                    
                     Text("We’re coffee shop, beer and wine bar, & event space for performing arts")
                         .multilineTextAlignment(.center)
                         .font(.custom("Gilroy-Light", size: 17))
                         .foregroundColor(Color("Letras"))
                         .padding(.bottom,30)
-                    NavigationLink {
-                        LoginView()
-                    } label: {
-                        ButtonMarron(texto: "Get Started")
-                            .padding(.bottom,25)
-                    }
+                    
+                    
+                    ButtonMarron(texto: "Get Started", clickEnButton: {
+                        irAlLogin = true
+                    })
+                    .padding(.bottom,25)
+                    
                 }
                 .padding()
+                
+                NavigationLink(destination: LoginView(), isActive: $irAlLogin) {
+                    EmptyView()
+                }
             }
         }
     }

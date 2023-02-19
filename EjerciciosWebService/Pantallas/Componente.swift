@@ -67,7 +67,7 @@ func ContraseñaDeTelefonoTextField(contraseñaDeCelular:Binding<String>) -> som
 }
 
 
-func ButtonMarron(texto:String) -> some View{
+func ButtonMarron(texto:String,clickEnButton: @escaping () -> Void) -> some View{
     return HStack{
         Spacer()
         Text(texto)
@@ -81,6 +81,9 @@ func ButtonMarron(texto:String) -> some View{
     .foregroundColor(Color.white)
     .background(Color("ColorButton"))
     .cornerRadius(10)
+    .onTapGesture {
+        clickEnButton()
+    }
 }
 
 func CeldaEspecias(especia:GetEspeciasResponse,

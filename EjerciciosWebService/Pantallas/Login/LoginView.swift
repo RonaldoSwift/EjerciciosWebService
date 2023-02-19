@@ -19,7 +19,7 @@ struct LoginView: View {
                 .edgesIgnoringSafeArea(.all)
                 .background(
                     LinearGradient(gradient: Gradient(colors: [.black]), startPoint: .top, endPoint: .bottom)
-                    )
+                )
             
             VStack{
                 LogoGeneralCelda()
@@ -46,13 +46,12 @@ struct LoginView: View {
                     ForGotPasworCelda()
                 }
                 
-                NavigationLink {
-                    InfoView()
-                        .padding(.bottom,30)
-                } label: {
-                    //Button en Componentes
-                    ButtonMarron(texto: "Sign In")
-                }
+                
+                //Button en Componentes
+                ButtonMarron(texto: "Sign In", clickEnButton: {
+                    
+                })
+                
                 
                 HStack{
                     Text("Dont have an account?")
