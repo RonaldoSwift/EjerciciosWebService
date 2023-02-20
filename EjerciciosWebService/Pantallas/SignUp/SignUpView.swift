@@ -9,10 +9,11 @@ import SwiftUI
 
 struct SignUpView: View {
     var singUoViewModel: SignUpViewModel = SignUpViewModel()
-    @State private var numeroDeCelular: String = ""
+    @State private var correoDeUsuario: String = ""
     @State private var pasword: String = ""
     @State private var rePaword: String = ""
-    @State private var irVerEspecias: Bool = false
+    @State private var irAInfoView: Bool = false
+    @State private var mostrarAlertaDeError = false
     
     var body: some View {
         ZStack{
@@ -34,7 +35,7 @@ struct SignUpView: View {
                 
                 
                 //Numero De Celular
-                NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
+                NumeroDeTelefonoTextField(numeroDeCelular: $correoDeUsuario)
                 
                 //Pasword
                 ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
@@ -50,8 +51,7 @@ struct SignUpView: View {
                 
                 ButtonMarron(texto: "Sign Up", clickEnButton: {
                     
-                    singUoViewModel.registrarUsuario(correo: "echon@gmail.com", pasword: "123456")
-                    irVerEspecias = true
+                    singUoViewModel.registrarUsuario(correo: correoDeUsuario, pasword: pasword)
                 })
                 
                 HStack{
@@ -70,10 +70,21 @@ struct SignUpView: View {
                 .padding(.bottom,15)
             }
             .padding()
-            NavigationLink(destination: InfoView(), isActive: $irVerEspecias) {
+            NavigationLink(destination: InfoView(), isActive: $irAInfoView) {
                 EmptyView()
             }
         }
+        .onReceive(singUoViewModel.$mostrarErrorAlert) { mostrarErrorAlert in
+            self.mostrarAlertaDeError = mostrarErrorAlert
+        }
+        .onReceive(singUoViewModel.$irAInfoView) { irAnInFoView in
+            self.irAInfoView = irAnInFoView
+        }
+        .alert("Hubo un error en Registro",isPresented: $mostrarAlertaDeError){
+            Button("OK", role: .cancel) { }
+            
+        }
+        
     }
 }
 

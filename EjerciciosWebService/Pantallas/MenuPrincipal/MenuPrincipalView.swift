@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct MenuPrincipalView: View {
     
     @State private var irAlLogin:Bool = false
+    @State private var irAInfoView:Bool = false
     
     
     var body: some View {
@@ -46,6 +48,17 @@ struct MenuPrincipalView: View {
                 
                 NavigationLink(destination: LoginView(), isActive: $irAlLogin) {
                     EmptyView()
+                }
+                
+                NavigationLink(destination: InfoView(), isActive: $irAInfoView) {
+                    EmptyView()
+                }
+            }
+        }.onAppear{
+            //Detectar si el usuario esta o no logeado con FireBase
+            Auth.auth().addStateDidChangeListener { (auth:Auth, user:User?) in
+                if(user != nil){
+                    irAInfoView = true
                 }
             }
         }

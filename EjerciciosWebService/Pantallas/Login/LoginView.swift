@@ -9,8 +9,11 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var numeroDeCelular: String = ""
+    private var loginViewModel:LoginViewModel = LoginViewModel()
+    @State private var correoDeUsuario: String = UserDefaults.standard.string(forKey: "LLAVE_CORREO") ?? ""
     @State private var pasword: String = ""
+    @State private var irAInfoView:Bool = false
+    @State private var mostrarAlertaDeError = false
     
     var body: some View {
         ZStack{
@@ -34,7 +37,7 @@ struct LoginView: View {
                     .padding(.bottom,50)
                 
                 //NUMERO De Celular
-                NumeroDeTelefonoTextField(numeroDeCelular: $numeroDeCelular)
+                NumeroDeTelefonoTextField(numeroDeCelular: $correoDeUsuario)
                 
                 //PASWORD
                 ContraseñaDeTelefonoTextField(contraseñaDeCelular: $pasword)
@@ -46,10 +49,9 @@ struct LoginView: View {
                     ForGotPasworCelda()
                 }
                 
-                
                 //Button en Componentes
                 ButtonMarron(texto: "Sign In", clickEnButton: {
-                    
+                    loginViewModel.login(emali: correoDeUsuario, pasword: pasword)
                 })
                 
                 
@@ -70,8 +72,18 @@ struct LoginView: View {
             }
             .padding()
             
-            
-            
+            NavigationLink(destination: InfoView(), isActive: $irAInfoView) {
+                EmptyView()
+            }
+            //Escuhamos los Published del ViewModel
+        }.onReceive(loginViewModel.$irAInfoView) { irAInfoView in
+            self.irAInfoView = irAInfoView
+        }
+        .onReceive(loginViewModel.$mostrarErrorAlert, perform: { mostrarErrorAlert in
+            self.mostrarAlertaDeError = mostrarErrorAlert
+        })
+        .alert("Hubo un error en el Login",isPresented: $mostrarAlertaDeError) {
+            Button("OK", role: .cancel) { }
         }
     }
 }

@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import CoreData
+import FirebaseAuth
 
 class VerEspeciasViewModel: ObservableObject{
     
@@ -93,5 +94,14 @@ class VerEspeciasViewModel: ObservableObject{
                     }
                 }
         })
+    }
+    
+    
+    func cerrarSesion(){
+        do{
+            try Auth.auth().signOut()
+        } catch{
+            print("No se pudo serrar sesion")
+        }
     }
 }

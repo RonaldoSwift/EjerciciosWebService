@@ -37,6 +37,7 @@ struct InfoView: View {
         }
         .accentColor(Color.white)
         .navigationTitle(selection == 1 ? "Home (\(UserDefaults.standard.integer(forKey: "CantidadFavoritos")))" : "Favoritos")
+        .navigationBarBackButtonHidden(true)
     }
 }
 

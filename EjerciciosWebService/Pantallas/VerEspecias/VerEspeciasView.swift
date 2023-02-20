@@ -14,6 +14,7 @@ struct VerEspeciasView: View {
     @State private var especias: [GetEspeciasResponse] = []
     @State private var mostrarSiguientePantalla = false
     @EnvironmentObject var sharedViewModel: SharedViewModel
+    @EnvironmentObject var appState:AppViewModel
     
     var body: some View {
         ZStack{
@@ -32,6 +33,17 @@ struct VerEspeciasView: View {
                     }
                     .multilineTextAlignment(.leading)
                     .font(.custom("Gilroy-Regular", size: 13))
+                    
+                    
+                    Button {
+                        verEspeciasViewModel.cerrarSesion()
+                        appState.rooViewID = UUID()
+                    } label: {
+                        Text("Cerrar Sesion")
+                    }
+                    
+                    
+
                 }
                 
                 HStack{

@@ -12,11 +12,14 @@ struct EjerciciosWebServiceApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var  appDelegate
     var sharedViewModel: SharedViewModel = SharedViewModel()
+    @ObservedObject var appState = AppViewModel()
     
     var body: some Scene {
         WindowGroup {
             MenuPrincipalView()
+                .id(appState.rooViewID)
                 .environmentObject(sharedViewModel)
+                .environmentObject(appState)
         }
     }
 }
