@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12BB40229A536D100AC7113 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB40129A536D100AC7113 /* MenuPrincipalView.swift */; };
+		D12BB40529A57E8500AC7113 /* Componentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB40429A57E8500AC7113 /* Componentes.swift */; };
+		D12BB42F29A591D200AC7113 /* ContinueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB42E29A591D200AC7113 /* ContinueView.swift */; };
+		D12BB43229A6880900AC7113 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB43129A6880900AC7113 /* SignUpView.swift */; };
+		D12BB43529A6948A00AC7113 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB43429A6948A00AC7113 /* LogInView.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
-		D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB022989CD6B00BF4C81 /* ContentView.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
 		D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */; };
-		D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB092989CD6F00BF4C81 /* Persistence.swift */; };
 		D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */; };
 		D1CACB172989CD7000BF4C81 /* EjerciciosWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */; };
 		D1CACB212989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB202989CD7000BF4C81 /* EjerciciosWebServiceUITests.swift */; };
@@ -36,12 +39,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12BB40129A536D100AC7113 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D12BB40429A57E8500AC7113 /* Componentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Componentes.swift; sourceTree = "<group>"; };
+		D12BB40629A585BE00AC7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12BB41B29A58E0000AC7113 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		D12BB41C29A58E0000AC7113 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		D12BB41D29A58E0000AC7113 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		D12BB41E29A58E0000AC7113 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-LightItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		D12BB41F29A58E0000AC7113 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42029A58E0000AC7113 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42129A58E0000AC7113 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		D12BB42229A58E0000AC7113 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42329A58E0000AC7113 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D12BB42429A58E0100AC7113 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		D12BB42529A58E0100AC7113 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLightItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42629A58E0100AC7113 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		D12BB42729A58E0100AC7113 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		D12BB42829A58E0100AC7113 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ThinItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42929A58E0100AC7113 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D12BB42A29A58E0100AC7113 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		D12BB42B29A58E0100AC7113 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BlackItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42C29A58E0100AC7113 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-MediumItalic.ttf"; path = "../../../../Downloads/Montserrat/static/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D12BB42E29A591D200AC7113 /* ContinueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueView.swift; sourceTree = "<group>"; };
+		D12BB43129A6880900AC7113 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D12BB43429A6948A00AC7113 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
-		D1CACB022989CD6B00BF4C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1CACB042989CD6F00BF4C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D1CACB092989CD6F00BF4C81 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D1CACB0C2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EjerciciosWebService.xcdatamodel; sourceTree = "<group>"; };
 		D1CACB122989CD7000BF4C81 /* EjerciciosWebServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EjerciciosWebServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB162989CD7000BF4C81 /* EjerciciosWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceTests.swift; sourceTree = "<group>"; };
@@ -75,6 +100,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12BB40029A536BC00AC7113 /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB40129A536D100AC7113 /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
+		D12BB40329A57E2C00AC7113 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB43329A6946C00AC7113 /* LogIn */,
+				D12BB43029A687F100AC7113 /* SignUp */,
+				D12BB42D29A591B900AC7113 /* Continue */,
+				D12BB40029A536BC00AC7113 /* MenuPrincipal */,
+				D12BB40429A57E8500AC7113 /* Componentes.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D12BB41A29A58D7200AC7113 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB42129A58E0000AC7113 /* Montserrat-Black.ttf */,
+				D12BB42B29A58E0100AC7113 /* Montserrat-BlackItalic.ttf */,
+				D12BB41D29A58E0000AC7113 /* Montserrat-Bold.ttf */,
+				D12BB41F29A58E0000AC7113 /* Montserrat-BoldItalic.ttf */,
+				D12BB42329A58E0000AC7113 /* Montserrat-ExtraBold.ttf */,
+				D12BB42029A58E0000AC7113 /* Montserrat-ExtraBoldItalic.ttf */,
+				D12BB42929A58E0100AC7113 /* Montserrat-ExtraLight.ttf */,
+				D12BB42529A58E0100AC7113 /* Montserrat-ExtraLightItalic.ttf */,
+				D12BB42A29A58E0100AC7113 /* Montserrat-Italic.ttf */,
+				D12BB42729A58E0100AC7113 /* Montserrat-Light.ttf */,
+				D12BB41E29A58E0000AC7113 /* Montserrat-LightItalic.ttf */,
+				D12BB41C29A58E0000AC7113 /* Montserrat-Medium.ttf */,
+				D12BB42C29A58E0100AC7113 /* Montserrat-MediumItalic.ttf */,
+				D12BB41B29A58E0000AC7113 /* Montserrat-Regular.ttf */,
+				D12BB42429A58E0100AC7113 /* Montserrat-SemiBold.ttf */,
+				D12BB42229A58E0000AC7113 /* Montserrat-SemiBoldItalic.ttf */,
+				D12BB42629A58E0100AC7113 /* Montserrat-Thin.ttf */,
+				D12BB42829A58E0100AC7113 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D12BB42D29A591B900AC7113 /* Continue */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB42E29A591D200AC7113 /* ContinueView.swift */,
+			);
+			path = Continue;
+			sourceTree = "<group>";
+		};
+		D12BB43029A687F100AC7113 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB43129A6880900AC7113 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D12BB43329A6946C00AC7113 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				D12BB43429A6948A00AC7113 /* LogInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		D1CACAF42989CD6B00BF4C81 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +192,11 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D12BB41A29A58D7200AC7113 /* Fonts */,
+				D12BB40629A585BE00AC7113 /* Info.plist */,
+				D12BB40329A57E2C00AC7113 /* Views */,
 				D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */,
-				D1CACB022989CD6B00BF4C81 /* ContentView.swift */,
 				D1CACB042989CD6F00BF4C81 /* Assets.xcassets */,
-				D1CACB092989CD6F00BF4C81 /* Persistence.swift */,
 				D1CACB0B2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld */,
 				D1CACB062989CD6F00BF4C81 /* Preview Content */,
 			);
@@ -263,10 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12BB42F29A591D200AC7113 /* ContinueView.swift in Sources */,
+				D12BB43529A6948A00AC7113 /* LogInView.swift in Sources */,
 				D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */,
-				D1CACB0A2989CD6F00BF4C81 /* Persistence.swift in Sources */,
-				D1CACB032989CD6B00BF4C81 /* ContentView.swift in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
+				D12BB40229A536D100AC7113 /* MenuPrincipalView.swift in Sources */,
+				D12BB43229A6880900AC7113 /* SignUpView.swift in Sources */,
+				D12BB40529A57E8500AC7113 /* Componentes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,9 +526,9 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EjerciciosWebService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,9 +555,9 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EjerciciosWebService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
