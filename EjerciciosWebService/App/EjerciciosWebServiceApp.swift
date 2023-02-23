@@ -7,12 +7,17 @@
 
 import SwiftUI
 
+
 @main
 struct EjerciciosWebServiceApp: App {
-
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @ObservedObject var appState = AppViewModel()
     var body: some Scene {
         WindowGroup {
             MenuPrincipalView()
+                .id(appState.rooViewID)
+                .environmentObject(appState)
         }
     }
 }

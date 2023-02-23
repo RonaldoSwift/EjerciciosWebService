@@ -43,7 +43,7 @@ struct ContinueView: View {
                     NavigationLink {
                         SignUpView()
                     } label: {
-                        BotonVerde(nombre: "CONTINUE")
+                        BotonVerdeSecuencial(nombre: "CONTINUE")
                     }
                     .padding(.top, 50)
                     

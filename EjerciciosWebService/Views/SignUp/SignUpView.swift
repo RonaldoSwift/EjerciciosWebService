@@ -23,7 +23,7 @@ struct SignUpView: View {
                     Spacer()
                     
                     NavigationLink {
-                        
+                        LogInView()
                     } label: {
                         Text("Sign up free")
                             .padding()
@@ -58,7 +58,7 @@ struct SignUpView: View {
                     }
                     
                     NavigationLink {
-                        
+                        LogInView()
                     } label: {
                         Text("Log In")
                             .font(.title2)

@@ -36,7 +36,7 @@ struct MenuPrincipalView: View {
                         NavigationLink {
                             ContinueView()
                         } label: {
-                            BotonVerde(nombre: "Get Started")
+                            BotonVerdeSecuencial(nombre: "Get Started")
                         }
                     }
                     .padding()
