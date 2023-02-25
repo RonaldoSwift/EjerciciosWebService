@@ -195,12 +195,12 @@ func LogosEnlaces(nombreFacebook:String, nombreGoodle:String, nombreManzana:Stri
 }
 
 //FUNCION PARA IR A OTRA PANTALLA
-func IrAOtraPantalla(nombreDeTexto:String, nombreEnlace:String) -> some View{
+func IrAOtraPantalla(nombreDeTexto:String, nombreEnlace:String,clickEnButton: @escaping () -> Void) -> some View{
     return HStack{
         Text(nombreDeTexto)
             .foregroundColor(Color.white)
         Button{
-            
+            clickEnButton()
         } label: {
             Text(nombreEnlace)
                 .foregroundColor(Color("ColorAmarillo"))

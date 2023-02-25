@@ -12,7 +12,8 @@ struct LogInView: View {
     var logInViewModel: LogInViewModel = LogInViewModel()
     @State private var correoDeUsuario: String = UserDefaults.standard.string(forKey: "LLAVE_CORREO") ?? ""
     @State private var pasword:String = ""
-    @State private var irHomePageView:Bool = false
+    @State private var irAnfoTapsView:Bool = false
+    @State private var irARegister:Bool = false
     @State private var mostrarAlertaDeError = false
     
     var body: some View {
@@ -60,18 +61,24 @@ struct LogInView: View {
                 LogosEnlaces(nombreFacebook: "LogoF", nombreGoodle: "LogoGoogle", nombreManzana: "LogoManzana")
                     .padding(.bottom,10)
 
-                IrAOtraPantalla(nombreDeTexto: "Don't have an account?", nombreEnlace: "Register")
+                IrAOtraPantalla(nombreDeTexto: "Don't have an account?", nombreEnlace: "Register", clickEnButton: {
+                    irARegister = true
+                })
                     .padding(.bottom,30)
 
             }
             .padding()
             
-            NavigationLink(destination: HomePageView(), isActive: $irHomePageView) {
+            NavigationLink(destination: InfoTapsView(), isActive: $irAnfoTapsView) {
                 EmptyView()
             }
+            NavigationLink(destination: RegisterView(), isActive: $irARegister) {
+                EmptyView()
+            }
+            
             //Escuhamos los Published del ViewModel
-        }.onReceive(logInViewModel.$irAHomePage) { irHomePageView in
-            self.irHomePageView = irHomePageView
+        }.onReceive(logInViewModel.$irAHomePage) { irAnfoTapsView in
+            self.irAnfoTapsView = irAnfoTapsView
         }
         .onReceive(logInViewModel.$mostrarErrorAlert, perform: { mostrarErrorAlert in
             self.mostrarAlertaDeError = mostrarErrorAlert

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct MenuPrincipalView: View {
+    @State private var irAInfoTaps:Bool = false
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -28,11 +31,11 @@ struct MenuPrincipalView: View {
                             .foregroundColor(Color("ColorLetra"))
                             .bold()
                             .padding(.bottom, 20)
-
+                        
                         Text("Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.")
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 35)
-
+                        
                         NavigationLink {
                             ContinueView()
                         } label: {
@@ -40,6 +43,16 @@ struct MenuPrincipalView: View {
                         }
                     }
                     .padding()
+                }
+                NavigationLink(destination: InfoTapsView(), isActive: $irAInfoTaps) {
+                    EmptyView()
+                }
+            }
+        }
+        .onAppear{
+            Auth.auth().addStateDidChangeListener { (auth:Auth, user:User?) in
+                if(user != nil){
+                    irAInfoTaps = true
                 }
             }
         }

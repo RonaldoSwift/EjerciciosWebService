@@ -19,7 +19,16 @@
 		D12BB44329A6F0F100AC7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB44229A6F0F100AC7113 /* AppDelegate.swift */; };
 		D1B6EE7F29A7E0580031337C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE7E29A7E0580031337C /* RegisterViewModel.swift */; };
 		D1B6EE8129A7F3A30031337C /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8029A7F3A30031337C /* LogInViewModel.swift */; };
-		D1B6EE8329A7F8050031337C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8229A7F8050031337C /* AppState.swift */; };
+		D1B6EE8329A7F8050031337C /* AppSharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8229A7F8050031337C /* AppSharedViewModel.swift */; };
+		D1B6EE8629A820D00031337C /* InfoTapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8529A820D00031337C /* InfoTapsView.swift */; };
+		D1B6EE8929A82BED0031337C /* PlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8829A82BED0031337C /* PlayListView.swift */; };
+		D1B6EE8C29A82C070031337C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8B29A82C070031337C /* HistoryView.swift */; };
+		D1B6EE8F29A82C200031337C /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE8E29A82C200031337C /* ProfilView.swift */; };
+		D1B6EE9129A835B10031337C /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE9029A835B10031337C /* HomePageViewModel.swift */; };
+		D1B6EE9429A843EA0031337C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D1B6EE9329A843EA0031337C /* FirebaseFirestore */; };
+		D1B6EE9829A849270031337C /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE9729A849270031337C /* Musica.swift */; };
+		D1B6EE9B29A84ECD0031337C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D1B6EE9A29A84ECD0031337C /* Kingfisher */; };
+		D1B6EE9D29A9826C0031337C /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EE9C29A9826C0031337C /* PlayListViewModel.swift */; };
 		D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */; };
 		D1CACB052989CD6F00BF4C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB042989CD6F00BF4C81 /* Assets.xcassets */; };
 		D1CACB082989CD6F00BF4C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CACB072989CD6F00BF4C81 /* Preview Assets.xcassets */; };
@@ -77,7 +86,14 @@
 		D12BB44229A6F0F100AC7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B6EE7E29A7E0580031337C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		D1B6EE8029A7F3A30031337C /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
-		D1B6EE8229A7F8050031337C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D1B6EE8229A7F8050031337C /* AppSharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSharedViewModel.swift; sourceTree = "<group>"; };
+		D1B6EE8529A820D00031337C /* InfoTapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTapsView.swift; sourceTree = "<group>"; };
+		D1B6EE8829A82BED0031337C /* PlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListView.swift; sourceTree = "<group>"; };
+		D1B6EE8B29A82C070031337C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D1B6EE8E29A82C200031337C /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		D1B6EE9029A835B10031337C /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		D1B6EE9729A849270031337C /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		D1B6EE9C29A9826C0031337C /* PlayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewModel.swift; sourceTree = "<group>"; };
 		D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerciciosWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosWebServiceApp.swift; sourceTree = "<group>"; };
 		D1CACB042989CD6F00BF4C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,7 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B6EE9B29A84ECD0031337C /* Kingfisher in Frameworks */,
 				D12BB44029A6EFD000AC7113 /* FirebaseAuth in Frameworks */,
+				D1B6EE9429A843EA0031337C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +145,11 @@
 		D12BB40329A57E2C00AC7113 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1B6EE8D29A82C0B0031337C /* Profil */,
+				D1B6EE8A29A82BF20031337C /* History */,
+				D1B6EE8729A82BD60031337C /* PlayList */,
 				D12BB43929A6DC7100AC7113 /* HomePage */,
+				D1B6EE8429A820A10031337C /* InfoTaps */,
 				D12BB43629A6D60C00AC7113 /* Register */,
 				D12BB43329A6946C00AC7113 /* LogIn */,
 				D12BB43029A687F100AC7113 /* SignUp */,
@@ -201,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				D12BB43A29A6DC8400AC7113 /* HomePageView.swift */,
+				D1B6EE9029A835B10031337C /* HomePageViewModel.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -210,9 +233,65 @@
 			children = (
 				D1CACB002989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift */,
 				D12BB44229A6F0F100AC7113 /* AppDelegate.swift */,
-				D1B6EE8229A7F8050031337C /* AppState.swift */,
+				D1B6EE8229A7F8050031337C /* AppSharedViewModel.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D1B6EE8429A820A10031337C /* InfoTaps */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE8529A820D00031337C /* InfoTapsView.swift */,
+			);
+			path = InfoTaps;
+			sourceTree = "<group>";
+		};
+		D1B6EE8729A82BD60031337C /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE8829A82BED0031337C /* PlayListView.swift */,
+				D1B6EE9C29A9826C0031337C /* PlayListViewModel.swift */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		D1B6EE8A29A82BF20031337C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE8B29A82C070031337C /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		D1B6EE8D29A82C0B0031337C /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE8E29A82C200031337C /* ProfilView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		D1B6EE9229A843EA0031337C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1B6EE9529A849040031337C /* Dominio */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE9629A849190031337C /* Modelos */,
+			);
+			path = Dominio;
+			sourceTree = "<group>";
+		};
+		D1B6EE9629A849190031337C /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6EE9729A849270031337C /* Musica.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 		D1CACAF42989CD6B00BF4C81 = {
@@ -222,6 +301,7 @@
 				D1CACB152989CD7000BF4C81 /* EjerciciosWebServiceTests */,
 				D1CACB1F2989CD7000BF4C81 /* EjerciciosWebServiceUITests */,
 				D1CACAFE2989CD6B00BF4C81 /* Products */,
+				D1B6EE9229A843EA0031337C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +318,7 @@
 		D1CACAFF2989CD6B00BF4C81 /* EjerciciosWebService */ = {
 			isa = PBXGroup;
 			children = (
+				D1B6EE9529A849040031337C /* Dominio */,
 				D12BB44129A6F0D800AC7113 /* App */,
 				D12BB43C29A6EF4000AC7113 /* GoogleService-Info.plist */,
 				D12BB41A29A58D7200AC7113 /* Fonts */,
@@ -293,6 +374,8 @@
 			name = EjerciciosWebService;
 			packageProductDependencies = (
 				D12BB43F29A6EFD000AC7113 /* FirebaseAuth */,
+				D1B6EE9329A843EA0031337C /* FirebaseFirestore */,
+				D1B6EE9A29A84ECD0031337C /* Kingfisher */,
 			);
 			productName = EjerciciosWebService;
 			productReference = D1CACAFD2989CD6B00BF4C81 /* EjerciciosWebService.app */;
@@ -368,6 +451,7 @@
 			mainGroup = D1CACAF42989CD6B00BF4C81;
 			packageReferences = (
 				D12BB43E29A6EFD000AC7113 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D1B6EE9929A84ECD0031337C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D1CACAFE2989CD6B00BF4C81 /* Products */;
 			projectDirPath = "";
@@ -412,7 +496,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B6EE9D29A9826C0031337C /* PlayListViewModel.swift in Sources */,
+				D1B6EE8929A82BED0031337C /* PlayListView.swift in Sources */,
 				D12BB42F29A591D200AC7113 /* ContinueView.swift in Sources */,
+				D1B6EE9129A835B10031337C /* HomePageViewModel.swift in Sources */,
 				D12BB43529A6948A00AC7113 /* LogInView.swift in Sources */,
 				D1CACB0D2989CD6F00BF4C81 /* EjerciciosWebService.xcdatamodeld in Sources */,
 				D1CACB012989CD6B00BF4C81 /* EjerciciosWebServiceApp.swift in Sources */,
@@ -420,9 +507,13 @@
 				D1B6EE7F29A7E0580031337C /* RegisterViewModel.swift in Sources */,
 				D12BB40229A536D100AC7113 /* MenuPrincipalView.swift in Sources */,
 				D12BB43829A6D62000AC7113 /* RegisterView.swift in Sources */,
+				D1B6EE8C29A82C070031337C /* HistoryView.swift in Sources */,
+				D1B6EE8F29A82C200031337C /* ProfilView.swift in Sources */,
 				D12BB43229A6880900AC7113 /* SignUpView.swift in Sources */,
+				D1B6EE9829A849270031337C /* Musica.swift in Sources */,
 				D12BB43B29A6DC8400AC7113 /* HomePageView.swift in Sources */,
-				D1B6EE8329A7F8050031337C /* AppState.swift in Sources */,
+				D1B6EE8629A820D00031337C /* InfoTapsView.swift in Sources */,
+				D1B6EE8329A7F8050031337C /* AppSharedViewModel.swift in Sources */,
 				D12BB44329A6F0F100AC7113 /* AppDelegate.swift in Sources */,
 				D12BB40529A57E8500AC7113 /* Componentes.swift in Sources */,
 			);
@@ -759,6 +850,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		D1B6EE9929A84ECD0031337C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -766,6 +865,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D12BB43E29A6EFD000AC7113 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		D1B6EE9329A843EA0031337C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12BB43E29A6EFD000AC7113 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D1B6EE9A29A84ECD0031337C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1B6EE9929A84ECD0031337C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 

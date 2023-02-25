@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class RegisterViewModel:ObservableObject{
     
-    @Published var irAHomePageView : Bool = false
+    @Published var irAnfoTapsView : Bool = false
     @Published var mostrarErrorAlert:Bool = false
     
     func registrarUsuario(correo:String, pasword:String){
@@ -20,7 +20,7 @@ class RegisterViewModel:ObservableObject{
                 mostrarErrorAlert = true
             } else {
                 print("Se Registro usuario correctamente")
-                irAHomePageView = true
+                irAnfoTapsView = true
                 UserDefaults.standard.set(correo, forKey: "LLAVE_CORREO")
             }
         }

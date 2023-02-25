@@ -14,7 +14,9 @@ struct RegisterView: View {
     @State private var enterEmail:String = ""
     @State private var pasword:String = ""
     @State private var repeatPasword:String = ""
-    @State private var irAHomePageView: Bool = false
+    @State private var irAnfoTapsView: Bool = false
+    @State private var irALogin: Bool = false
+
     @State private var mostrarAlertaDeError = false
     
     var body: some View {
@@ -46,16 +48,22 @@ struct RegisterView: View {
                 
                 LogosEnlaces(nombreFacebook: "LogoF", nombreGoodle: "LogoGoogle", nombreManzana: "LogoManzana")
                 
-                IrAOtraPantalla(nombreDeTexto: "Have an account?", nombreEnlace: "Log In")
+                IrAOtraPantalla(nombreDeTexto: "Have an account?", nombreEnlace: "Log In", clickEnButton: {
+                    irALogin = true
+                })
                 
             }
             .padding()
+            
+            NavigationLink(destination: LogInView(), isActive: $irALogin, label: {
+                EmptyView()
+            })
         }
         .onReceive(registerViewModel.$mostrarErrorAlert) { mostrarErrorAlert in
             self.mostrarAlertaDeError = mostrarErrorAlert
         }
-        .onReceive(registerViewModel.$irAHomePageView) { irAHomePageView in
-            self.irAHomePageView = irAHomePageView
+        .onReceive(registerViewModel.$irAnfoTapsView) { irAnfoTapsView in
+            self.irAnfoTapsView = irAnfoTapsView
         }
         .alert("Hubo un error en Registro",isPresented: $mostrarAlertaDeError){
             Button("ok", role: .cancel){
