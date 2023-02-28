@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetalleMusicaView: View {
+    
     var body: some View {
         ZStack{
             VStack{
