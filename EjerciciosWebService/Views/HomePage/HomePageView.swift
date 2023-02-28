@@ -5,37 +5,37 @@
 //  Created by Ronaldo on 22/02/23.
 //
 
-import SwiftUI
 import Kingfisher
+import SwiftUI
 
 struct HomePageView: View {
-    var homePageViewModel: HomePageViewModel = HomePageViewModel()
+    var homePageViewModel: HomePageViewModel = .init()
     @State private var listaDeMusicas: [Musica] = []
     @State private var detalleDeMusica: Bool = false
-    
+
     var body: some View {
-        ZStack{
+        ZStack {
             Color.black
-            VStack{
-                HStack{
+            VStack {
+                HStack {
                     Image("Lupa")
                         .resizable()
-                        .frame(width: 24,height: 24)
-                        .padding(.trailing,60)
+                        .frame(width: 24, height: 24)
+                        .padding(.trailing, 60)
                     LogoDeSpotify()
                     Image("Ajustes")
                         .resizable()
-                        .frame(width: 24,height: 24)
-                        .padding(.leading,60)
+                        .frame(width: 24, height: 24)
+                        .padding(.leading, 60)
                 }
-                .padding(.bottom,20)
-                
-                ZStack{
+                .padding(.bottom, 20)
+
+                ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color("ColorAmarillo"))
                         .frame(width: 314, height: 118)
-                    HStack{
-                        VStack(alignment: .leading){
+                    HStack {
+                        VStack(alignment: .leading) {
                             Text("Popular")
                                 .foregroundColor(Color.white)
                             Text("Sisa Rasa")
@@ -48,48 +48,47 @@ struct HomePageView: View {
                         .padding()
                         Image("MujerImage")
                             .resizable()
-                            .frame(width: 134,height: 142)
-                            .padding(.leading,30)
-                            .padding(.bottom,25)
+                            .frame(width: 134, height: 142)
+                            .padding(.leading, 30)
+                            .padding(.bottom, 25)
                         Image(systemName: "chevron.right")
-                            .padding(.trailing,15)
+                            .padding(.trailing, 15)
                     }
                 }
-                
+
                 Text("Today’s hits")
                     .font(.title2)
                     .bold()
-                    .padding(.trailing,100)
-                
-                
-                ScrollView(.horizontal){
-                    HStack{
-                        ForEach (listaDeMusicas, id: \.id){ musica in
+                    .padding(.trailing, 100)
+
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(listaDeMusicas, id: \.id) { musica in
                             celdaMusica(musica: musica, clickEnCelda: {
                                 detalleDeMusica = true
                             })
                         }
                     }
                 }
-                
-                ScrollView(.horizontal){
-                    HStack{
+
+                ScrollView(.horizontal) {
+                    HStack {
                         Text("Artist")
                             .font(.title2)
                             .bold()
-                            .padding(.leading,10)
+                            .padding(.leading, 10)
                         Text("Album")
                             .font(.title2)
                             .bold()
-                            .padding(.leading,30)
+                            .padding(.leading, 30)
                         Text("Podcast")
                             .font(.title2)
                             .bold()
-                            .padding(.leading,30)
+                            .padding(.leading, 30)
                         Text("Get")
                             .font(.title2)
                             .bold()
-                            .padding(.leading,30)
+                            .padding(.leading, 30)
                     }
                 }
             }
@@ -98,18 +97,18 @@ struct HomePageView: View {
                 EmptyView()
             }
         }
-        //TRAES DEL VIEW MODEL
+        // TRAES DEL VIEW MODEL
         .onReceive(homePageViewModel.$musicas) { musicas in
             listaDeMusicas = musicas
         }
-        //EJECUTA CUANDO LA PANTALLA APARECE
-        .onAppear{
+        // EJECUTA CUANDO LA PANTALLA APARECE
+        .onAppear {
             homePageViewModel.traerMusicasDeFireBase()
         }
     }
-    
-    private func celdaMusica(musica: Musica, clickEnCelda: @escaping () -> Void) -> some View{
-        return VStack{
+
+    private func celdaMusica(musica: Musica, clickEnCelda: @escaping () -> Void) -> some View {
+        return VStack {
             KFImage(URL(string: musica.url))
             Text("\(musica.titulo)")
                 .multilineTextAlignment(.leading)

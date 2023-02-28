@@ -7,7 +7,7 @@
 
 import Foundation
 
-//Esta calse es como un ShareViewModel
-final  class AppSharedViewModel:ObservableObject{
+// Esta calse es como un ShareViewModel
+final class AppSharedViewModel: ObservableObject {
     @Published var rooViewID = UUID()
 }

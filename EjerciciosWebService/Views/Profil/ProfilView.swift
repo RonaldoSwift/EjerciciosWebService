@@ -5,26 +5,25 @@
 //  Created by Ronaldo on 23/02/23.
 //
 
-import SwiftUI
 import FirebaseAuth
+import SwiftUI
 
 struct ProfilView: View {
     @EnvironmentObject var appSharedViewModel: AppSharedViewModel
-    
+
     var body: some View {
-        VStack{
+        VStack {
             Button {
-                do{
+                do {
                     try Auth.auth().signOut()
                     appSharedViewModel.rooViewID = UUID()
-                    
-                } catch{
+
+                } catch {
                     print("No se pudo cerrar sesion")
                 }
             } label: {
                 Text("Cerrar sesion")
             }
-
         }
     }
 }

@@ -8,7 +8,6 @@
 import SwiftUI
 @main
 struct EjerciciosWebServiceApp: App {
-    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var appState = AppSharedViewModel()
     var body: some Scene {

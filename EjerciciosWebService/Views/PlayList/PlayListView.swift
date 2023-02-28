@@ -5,17 +5,14 @@
 //  Created by Ronaldo on 23/02/23.
 //
 
-import SwiftUI
 import Kingfisher
+import SwiftUI
 
 struct PlayListView: View {
-    
     var body: some View {
-        ZStack{
+        ZStack {
             Color.black
-            VStack{
-                
-            }
+            VStack {}
         }
     }
 }

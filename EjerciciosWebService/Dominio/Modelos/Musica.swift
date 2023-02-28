@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Musica:Identifiable{
+struct Musica: Identifiable {
     let id: String
     let cantante: String
     let titulo: String
