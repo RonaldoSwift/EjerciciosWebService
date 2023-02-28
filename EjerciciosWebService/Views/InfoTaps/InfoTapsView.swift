@@ -11,11 +11,13 @@ struct InfoTapsView: View {
     @State private var selection = 1
     var body: some View {
         TabView(selection: $selection){
-            HomePageView()
-                .tabItem {
-                    Label("Home",systemImage: "house.fill")
-                }
-                .tag(1)
+            NavigationView {
+                HomePageView()
+            }
+            .tabItem {
+                Label("Home",systemImage: "house.fill")
+            }
+            .tag(1)
             
             PlayListView()
                 .tabItem {
@@ -23,7 +25,7 @@ struct InfoTapsView: View {
                 }
                 .tag(2)
             
-           HistoryView()
+            HistoryView()
                 .tabItem {
                     Label("History",systemImage: "clock")
                 }

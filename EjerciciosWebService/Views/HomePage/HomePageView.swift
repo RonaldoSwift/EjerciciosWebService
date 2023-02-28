@@ -11,6 +11,7 @@ import Kingfisher
 struct HomePageView: View {
     var homePageViewModel: HomePageViewModel = HomePageViewModel()
     @State private var listaDeMusicas: [Musica] = []
+    @State private var detalleDeMusica: Bool = false
     
     var body: some View {
         ZStack{
@@ -64,13 +65,9 @@ struct HomePageView: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach (listaDeMusicas, id: \.id){ musica in
-                            VStack{
-                                KFImage(URL(string: musica.url))
-                                Text("\(musica.titulo)")
-                                    .multilineTextAlignment(.leading)
-                                Text("\(musica.cantante)")
-                                    .multilineTextAlignment(.leading)
-                            }
+                            celdaMusica(musica: musica, clickEnCelda: {
+                                detalleDeMusica = true
+                            })
                         }
                     }
                 }
@@ -97,6 +94,9 @@ struct HomePageView: View {
                 }
             }
             .padding()
+            NavigationLink(destination: DetalleMusicaView(), isActive: $detalleDeMusica) {
+                EmptyView()
+            }
         }
         //TRAES DEL VIEW MODEL
         .onReceive(homePageViewModel.$musicas) { musicas in
@@ -105,6 +105,19 @@ struct HomePageView: View {
         //EJECUTA CUANDO LA PANTALLA APARECE
         .onAppear{
             homePageViewModel.traerMusicasDeFireBase()
+        }
+    }
+    
+    private func celdaMusica(musica: Musica, clickEnCelda: @escaping () -> Void) -> some View{
+        return VStack{
+            KFImage(URL(string: musica.url))
+            Text("\(musica.titulo)")
+                .multilineTextAlignment(.leading)
+            Text("\(musica.cantante)")
+                .multilineTextAlignment(.leading)
+        }
+        .onTapGesture {
+            clickEnCelda()
         }
     }
 }
