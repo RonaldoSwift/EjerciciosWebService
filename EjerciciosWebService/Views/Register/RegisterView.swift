@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var registerViewModel: RegisterViewModel = .init()
     @State private var fullName: String = ""
     @State private var enterEmail: String = ""
@@ -15,16 +16,12 @@ struct RegisterView: View {
     @State private var repeatPasword: String = ""
     @State private var irAnfoTapsView: Bool = false
     @State private var irALogin: Bool = false
-
     @State private var mostrarAlertaDeError = false
 
     var body: some View {
         ZStack {
             Color.black
             VStack {
-                LogoDeSpotify()
-                    .padding(.bottom, 80)
-
                 Text("Register")
                     .font(.title2)
                     .bold()
@@ -62,8 +59,35 @@ struct RegisterView: View {
         .onReceive(registerViewModel.$irAnfoTapsView) { irAnfoTapsView in
             self.irAnfoTapsView = irAnfoTapsView
         }
-        .alert("Hubo un error en Registro", isPresented: $mostrarAlertaDeError) {
-            Button("ok", role: .cancel) {}
+
+        // iOS 13/14
+        .alert(isPresented: $mostrarAlertaDeError, content: {
+            Alert(title: Text("ubo un error en el Login"))
+        })
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomBackButton())
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Image("LogoSpotitfy")
+                    .resizable()
+                    .scaledToFit()
+            }
+        }
+    }
+
+    private func CustomBackButton() -> some View {
+        let backImage = Image("BackImage")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 10, height: 10)
+
+        return Button {
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            Circle()
+                .strokeBorder(Color.gray, lineWidth: 2)
+                .background(backImage)
+                .frame(width: 40, height: 40)
         }
     }
 }

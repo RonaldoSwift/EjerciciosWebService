@@ -74,9 +74,9 @@ struct LogInView: View {
         .onReceive(logInViewModel.$mostrarErrorAlert, perform: { mostrarErrorAlert in
             self.mostrarAlertaDeError = mostrarErrorAlert
         })
-        .alert("Hubo un error en el Login", isPresented: $mostrarAlertaDeError) {
-            Button("OK", role: .cancel) {}
-        }
+        .alert(isPresented: $mostrarAlertaDeError, content: {
+            Alert(title: Text("ubo un error en el Login"))
+        })
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton())
         .toolbar {

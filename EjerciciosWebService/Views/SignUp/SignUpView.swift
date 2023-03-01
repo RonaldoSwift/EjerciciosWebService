@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         ZStack {
             Image("FondoMenu")
@@ -17,11 +19,10 @@ struct SignUpView: View {
             ZStack {
                 // DEGRADADO PARA EL FONDO
                 DegradadoParaWlFondo()
+                    .ignoresSafeArea()
                 // VISTA
                 VStack {
-                    LogoDeSpotify()
                     Spacer()
-
                     NavigationLink {
                         LogInView()
                     } label: {
@@ -69,6 +70,30 @@ struct SignUpView: View {
                 }
                 .padding()
             }
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomBackButton())
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Image("LogoSpotitfy")
+                    .resizable()
+                    .scaledToFit()
+            }
+        }
+    }
+
+    private func CustomBackButton() -> some View {
+        let backImage = Image("BackImage")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 10, height: 10)
+        return Button {
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            Circle()
+                .strokeBorder(Color.gray, lineWidth: 2)
+                .background(backImage)
+                .frame(width: 40, height: 40)
         }
     }
 }

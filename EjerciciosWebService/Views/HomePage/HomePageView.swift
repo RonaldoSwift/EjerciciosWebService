@@ -12,6 +12,7 @@ struct HomePageView: View {
     var homePageViewModel: HomePageViewModel = .init()
     @State private var listaDeMusicas: [Musica] = []
     @State private var detalleDeMusica: Bool = false
+    @EnvironmentObject var sharedViewModel: SharedViewModel
 
     var body: some View {
         ZStack {
@@ -65,6 +66,8 @@ struct HomePageView: View {
                     HStack {
                         ForEach(listaDeMusicas, id: \.id) { musica in
                             celdaMusica(musica: musica, clickEnCelda: {
+                                // GUARDAMOS LA LISTA DE MUSCIAS PARA USARLO EN OTRA PANTALLA
+                                sharedViewModel.guardarMusica(musica: musica)
                                 detalleDeMusica = true
                             })
                         }

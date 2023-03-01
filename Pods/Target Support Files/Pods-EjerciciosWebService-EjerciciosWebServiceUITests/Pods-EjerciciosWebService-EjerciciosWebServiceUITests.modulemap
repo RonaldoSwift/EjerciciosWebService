@@ -1,0 +1,6 @@
+framework module Pods_EjerciciosWebService_EjerciciosWebServiceUITests {
+  umbrella header "Pods-EjerciciosWebService-EjerciciosWebServiceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

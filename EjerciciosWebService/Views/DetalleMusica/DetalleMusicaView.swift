@@ -5,13 +5,17 @@
 //  Created by Ronaldo on 27/02/23.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct DetalleMusicaView: View {
+    @EnvironmentObject var sharedViewModel: SharedViewModel
+
     var body: some View {
         ZStack {
+            Color.black.ignoresSafeArea()
             VStack {
-                Text("")
+                KFImage(URL(string: sharedViewModel.musica.url))
             }
         }
     }
