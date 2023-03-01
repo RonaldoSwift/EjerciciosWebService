@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		188F0B0C55CAC96E5A31CC9C /* Pods_EjerciciosWebService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A3D73D434CAF9D72FD8014 /* Pods_EjerciciosWebService.framework */; };
 		77E07A6AA8EECB6E9399186B /* Pods_EjerciciosWebService_EjerciciosWebServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDE713B8EC07C9D87BD38C2 /* Pods_EjerciciosWebService_EjerciciosWebServiceUITests.framework */; };
+		D110F70129B000F3008C8B49 /* DetalleMusicaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D110F70029B000F3008C8B49 /* DetalleMusicaViewModel.swift */; };
 		D12BB40229A536D100AC7113 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB40129A536D100AC7113 /* MenuPrincipalView.swift */; };
 		D12BB40529A57E8500AC7113 /* Componentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB40429A57E8500AC7113 /* Componentes.swift */; };
 		D12BB42F29A591D200AC7113 /* ContinueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BB42E29A591D200AC7113 /* ContinueView.swift */; };
@@ -86,6 +87,7 @@
 		A276F6A1F27119E0A74CED6E /* Pods_EjerciciosWebServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjerciciosWebServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A3D73D434CAF9D72FD8014 /* Pods_EjerciciosWebService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjerciciosWebService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDE713B8EC07C9D87BD38C2 /* Pods_EjerciciosWebService_EjerciciosWebServiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjerciciosWebService_EjerciciosWebServiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D110F70029B000F3008C8B49 /* DetalleMusicaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleMusicaViewModel.swift; sourceTree = "<group>"; };
 		D12BB40129A536D100AC7113 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		D12BB40429A57E8500AC7113 /* Componentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Componentes.swift; sourceTree = "<group>"; };
 		D12BB40629A585BE00AC7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				D1B6EEB529AD88960031337C /* DetalleMusicaView.swift */,
+				D110F70029B000F3008C8B49 /* DetalleMusicaViewModel.swift */,
 			);
 			path = DetalleMusica;
 			sourceTree = "<group>";
@@ -695,6 +698,7 @@
 				D12BB43B29A6DC8400AC7113 /* HomePageView.swift in Sources */,
 				D1B6EEB629AD88960031337C /* DetalleMusicaView.swift in Sources */,
 				D1B6EE8629A820D00031337C /* InfoTapsView.swift in Sources */,
+				D110F70129B000F3008C8B49 /* DetalleMusicaViewModel.swift in Sources */,
 				D1B6EE8329A7F8050031337C /* AppSharedViewModel.swift in Sources */,
 				D12BB44329A6F0F100AC7113 /* AppDelegate.swift in Sources */,
 				D12BB40529A57E8500AC7113 /* Componentes.swift in Sources */,
