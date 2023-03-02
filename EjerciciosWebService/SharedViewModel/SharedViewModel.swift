@@ -8,7 +8,7 @@
 import Foundation
 
 class SharedViewModel: ObservableObject {
-    @Published var musica: Musica = .init(id: "", cantante: "", titulo: "", url: "")
+    @Published var musica: Musica = .init(id: "", cantante: "", titulo: "", url: "", urlDeMusica: "")
 
     func guardarMusica(musica: Musica) {
         self.musica = musica

@@ -28,10 +28,11 @@ class PlayListViewModel: ObservableObject {
                     let id = data["id"] as? String ?? ""
                     let titulo = data["titulo"] as? String ?? ""
                     let url = data["url"] as? String ?? ""
+                    let urlDeMusica = data["urlDeMusica"] as? String ?? ""
 
                     print("\(cantante)- \(titulo)")
 
-                    self.musicas.append(Musica(id: id, cantante: cantante, titulo: titulo, url: url))
+                    self.musicas.append(Musica(id: id, cantante: cantante, titulo: titulo, url: url, urlDeMusica: urlDeMusica))
                 }
             }
         }

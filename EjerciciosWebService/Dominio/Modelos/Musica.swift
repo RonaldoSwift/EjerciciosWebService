@@ -12,4 +12,5 @@ struct Musica: Identifiable {
     let cantante: String
     let titulo: String
     let url: String
+    let urlDeMusica: String
 }

@@ -13,6 +13,8 @@ class HomePageViewModel: ObservableObject {
     @Published var musicas: [Musica] = []
 
     func traerMusicasDeFireBase() {
+        var musicasDeFireBase: [Musica] = []
+
         let coleccion = fireStore.collection("musicas")
         coleccion.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
             guard error == nil else {
@@ -28,11 +30,13 @@ class HomePageViewModel: ObservableObject {
                     let id = data["id"] as? String ?? ""
                     let titulo = data["titulo"] as? String ?? ""
                     let url = data["url"] as? String ?? ""
+                    let urlDeMusica = data["urlDeMusica"] as? String ?? ""
 
                     print("\(cantante)- \(titulo)")
 
-                    self.musicas.append(Musica(id: id, cantante: cantante, titulo: titulo, url: url))
+                    musicasDeFireBase.append(Musica(id: id, cantante: cantante, titulo: titulo, url: url, urlDeMusica: urlDeMusica))
                 }
+                self.musicas = musicasDeFireBase
             }
         }
     }

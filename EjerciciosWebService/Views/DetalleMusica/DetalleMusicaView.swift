@@ -9,17 +9,17 @@ import Kingfisher
 import SwiftUI
 
 struct DetalleMusicaView: View {
-    
     @EnvironmentObject var sharedViewModel: SharedViewModel
     let detalleMusicaViewModel: DetalleMusicaViewModel = .init()
-    
+
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
             VStack {
                 KFImage(URL(string: sharedViewModel.musica.url))
                     .resizable()
-                    .frame(width: 80, height: 90)
+                    .scaledToFit()
+                    .frame(width: .infinity, height: 350)
                 Text(sharedViewModel.musica.titulo)
                     .font(.largeTitle)
                     .bold()
@@ -27,7 +27,7 @@ struct DetalleMusicaView: View {
 
                 HStack {
                     Button {
-                        detalleMusicaViewModel.loadMusic(urlDeMusica: sharedViewModel.musica.urlDeMusica)
+                        detalleMusicaViewModel.loadMusic(urlDeMusica: URL(string: sharedViewModel.musica.urlDeMusica))
                     } label: {
                         Image(systemName: "gobackward")
                             .resizable()

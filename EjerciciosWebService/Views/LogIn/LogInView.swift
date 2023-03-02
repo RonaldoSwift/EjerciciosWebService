@@ -15,6 +15,7 @@ struct LogInView: View {
     @State private var irAnfoTapsView: Bool = false
     @State private var irARegister: Bool = false
     @State private var mostrarAlertaDeError = false
+    @State private var estaCargando: Bool = false
 
     var body: some View {
         ZStack {
@@ -43,9 +44,13 @@ struct LogInView: View {
                     Spacer()
                 }
 
-                BotonVerde(nombre: "Log In", clickEnButton: {
-                    logInViewModel.login(emali: correoDeUsuario, password: pasword)
-                })
+                if estaCargando == true {
+                    ProgressView()
+                } else {
+                    BotonVerde(nombre: "Log In", clickEnButton: {
+                        logInViewModel.login(emali: correoDeUsuario, password: pasword)
+                    })
+                }
 
                 SepararOr()
                     .padding(.bottom, 20)
@@ -73,6 +78,9 @@ struct LogInView: View {
         }
         .onReceive(logInViewModel.$mostrarErrorAlert, perform: { mostrarErrorAlert in
             self.mostrarAlertaDeError = mostrarErrorAlert
+        })
+        .onReceive(logInViewModel.$estaCargando, perform: { estaCargando in
+            self.estaCargando = estaCargando
         })
         .alert(isPresented: $mostrarAlertaDeError, content: {
             Alert(title: Text("ubo un error en el Login"))
